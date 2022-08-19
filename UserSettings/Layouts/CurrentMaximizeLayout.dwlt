@@ -1,0 +1,3410 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &1
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 3}
+  - {fileID: 23}
+  - {fileID: 25}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1920
+    height: 1030
+  m_MinSize: {x: 400, y: 300}
+  m_MaxSize: {x: 32384, y: 24288}
+  vertical: 0
+  controlID: 4398
+--- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924ffcbe75518854f97b48776d0f1939, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Prototype_Global_URP
+    m_Image: {fileID: 2800000, guid: 7129268cf102b2f45809905bcb27ce8b, type: 3}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 288.5
+    y: 359.5
+    width: 816
+    height: 266
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Selected: bf00925b2fbda49499ccc0de47e0d8ca
+  m_GraphObject: {fileID: 0}
+  m_LastSerializedFileContents: "{\r\n    \"m_SGVersion\": 3,\r\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.GraphData\",\r\n    \"m_ObjectId\": \"ebde5f25a9794e57846ae542e51e97ee\",\r\n   
+    \"m_Properties\": [\r\n        {\r\n            \"m_Id\": \"65284c3df8a5e28296ab2c661fb06f8e\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"2c2ed82158a8f681aefc758723130473\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"7c738a8e0e86dd83a18c685ebaa63482\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"0ea06de9ea69518b8855a1880fd3e73d\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"1334dc04d76f0e8cbea4935483dde4e9\"\r\n       
+    }\r\n    ],\r\n    \"m_Keywords\": [],\r\n    \"m_Dropdowns\": [],\r\n    \"m_CategoryData\":
+    [\r\n        {\r\n            \"m_Id\": \"689faba697d84dfabf6412dbc2135664\"\r\n       
+    }\r\n    ],\r\n    \"m_Nodes\": [\r\n        {\r\n            \"m_Id\": \"2d025d62a0fc2a86bd04d00182d56fda\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"04d2c40cdde0b28cba5c66ed31ff3867\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"c1699351edff078e9f052737bbebcedb\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"83942ec99371a18c87108a637cfeeda5\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"3ca898713668c983b29c8ff63f7d33c3\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"9cee7b649e427b80852bd7a3b2ed91cb\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"58be9a53fd903b8e990da8a3efb58f3f\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"6424e4ce95aee380ad1734678307ab82\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"6f3c3982ba971388b6946b532b8ff73b\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"9376a8acf520478f8a6e7e85468d3f43\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"ec08944225874fb8a781209a15457422\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"68f093a82b7d4fd68dcd5532ca069fa6\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"490acd17761048d2ab362ba4d4ed456c\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"267f4f26379b4d0c97a358c4227cd87c\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"028210422732409289c490176208b098\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"5077d82aa3814e6c86f490bc32e877b7\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"dd5400fbb9d942bdab01149a4db84b6f\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"36ee842fc8194dffa1d7c7193fda29db\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"e8f1c709955c4060a0d95a1eda47763f\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"296004f1cfd446a78b035dfb17a570c6\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"3e35bcb7b04d475cb65966746e3d13c5\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"e3bd3c2ab75942c5825bb898c3071ab9\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"f8e254be01f545ffa9d5fe38a24f10fb\"\r\n       
+    }\r\n    ],\r\n    \"m_GroupDatas\": [],\r\n    \"m_StickyNoteDatas\": [],\r\n   
+    \"m_Edges\": [\r\n        {\r\n            \"m_OutputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"04d2c40cdde0b28cba5c66ed31ff3867\"\r\n               
+    },\r\n                \"m_SlotId\": 3\r\n            },\r\n            \"m_InputSlot\":
+    {\r\n                \"m_Node\": {\r\n                    \"m_Id\": \"58be9a53fd903b8e990da8a3efb58f3f\"\r\n               
+    },\r\n                \"m_SlotId\": 1\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"2d025d62a0fc2a86bd04d00182d56fda\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"c1699351edff078e9f052737bbebcedb\"\r\n               
+    },\r\n                \"m_SlotId\": 1\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"3ca898713668c983b29c8ff63f7d33c3\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"04d2c40cdde0b28cba5c66ed31ff3867\"\r\n               
+    },\r\n                \"m_SlotId\": 0\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"58be9a53fd903b8e990da8a3efb58f3f\"\r\n                },\r\n               
+    \"m_SlotId\": 2\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"267f4f26379b4d0c97a358c4227cd87c\"\r\n               
+    },\r\n                \"m_SlotId\": 0\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"6424e4ce95aee380ad1734678307ab82\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"c1699351edff078e9f052737bbebcedb\"\r\n               
+    },\r\n                \"m_SlotId\": 6\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"6f3c3982ba971388b6946b532b8ff73b\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"c1699351edff078e9f052737bbebcedb\"\r\n               
+    },\r\n                \"m_SlotId\": 5\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"83942ec99371a18c87108a637cfeeda5\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"f8e254be01f545ffa9d5fe38a24f10fb\"\r\n               
+    },\r\n                \"m_SlotId\": 0\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"9376a8acf520478f8a6e7e85468d3f43\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"04d2c40cdde0b28cba5c66ed31ff3867\"\r\n               
+    },\r\n                \"m_SlotId\": 2\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"9cee7b649e427b80852bd7a3b2ed91cb\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"58be9a53fd903b8e990da8a3efb58f3f\"\r\n               
+    },\r\n                \"m_SlotId\": 0\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"c1699351edff078e9f052737bbebcedb\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"04d2c40cdde0b28cba5c66ed31ff3867\"\r\n               
+    },\r\n                \"m_SlotId\": 1\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"e3bd3c2ab75942c5825bb898c3071ab9\"\r\n                },\r\n               
+    \"m_SlotId\": 0\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"f8e254be01f545ffa9d5fe38a24f10fb\"\r\n               
+    },\r\n                \"m_SlotId\": 1\r\n            }\r\n        },\r\n       
+    {\r\n            \"m_OutputSlot\": {\r\n                \"m_Node\": {\r\n                   
+    \"m_Id\": \"f8e254be01f545ffa9d5fe38a24f10fb\"\r\n                },\r\n               
+    \"m_SlotId\": 2\r\n            },\r\n            \"m_InputSlot\": {\r\n               
+    \"m_Node\": {\r\n                    \"m_Id\": \"c1699351edff078e9f052737bbebcedb\"\r\n               
+    },\r\n                \"m_SlotId\": 3\r\n            }\r\n        }\r\n    ],\r\n   
+    \"m_VertexContext\": {\r\n        \"m_Position\": {\r\n            \"x\": 1070.0,\r\n           
+    \"y\": -154.0\r\n        },\r\n        \"m_Blocks\": [\r\n            {\r\n               
+    \"m_Id\": \"ec08944225874fb8a781209a15457422\"\r\n            },\r\n           
+    {\r\n                \"m_Id\": \"68f093a82b7d4fd68dcd5532ca069fa6\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"490acd17761048d2ab362ba4d4ed456c\"\r\n           
+    }\r\n        ]\r\n    },\r\n    \"m_FragmentContext\": {\r\n        \"m_Position\":
+    {\r\n            \"x\": 1070.0,\r\n            \"y\": 46.0\r\n        },\r\n       
+    \"m_Blocks\": [\r\n            {\r\n                \"m_Id\": \"267f4f26379b4d0c97a358c4227cd87c\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"028210422732409289c490176208b098\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"5077d82aa3814e6c86f490bc32e877b7\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"dd5400fbb9d942bdab01149a4db84b6f\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"36ee842fc8194dffa1d7c7193fda29db\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"e8f1c709955c4060a0d95a1eda47763f\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"296004f1cfd446a78b035dfb17a570c6\"\r\n           
+    },\r\n            {\r\n                \"m_Id\": \"3e35bcb7b04d475cb65966746e3d13c5\"\r\n           
+    }\r\n        ]\r\n    },\r\n    \"m_PreviewData\": {\r\n        \"serializedMesh\":
+    {\r\n            \"m_SerializedMesh\": \"{\\\"mesh\\\":{\\\"instanceID\\\":0}}\",\r\n           
+    \"m_Guid\": \"\"\r\n        },\r\n        \"preventRotation\": false\r\n    },\r\n   
+    \"m_Path\": \"SyntyStudios\",\r\n    \"m_GraphPrecision\": 0,\r\n    \"m_PreviewMode\":
+    2,\r\n    \"m_OutputNode\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_ActiveTargets\":
+    [\r\n        {\r\n            \"m_Id\": \"b8d5a4d9777c454ea1b147f58cb74c00\"\r\n       
+    }\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n   
+    \"m_ObjectId\": \"028210422732409289c490176208b098\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.NormalTS\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"393957da2fee4697915fa765e5bff654\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.NormalTS\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.LerpNode\",\r\n    \"m_ObjectId\": \"04d2c40cdde0b28cba5c66ed31ff3867\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Lerp\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 282.0,\r\n           
+    \"y\": -52.0,\r\n            \"width\": 208.0,\r\n            \"height\": 326.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"4a193cd1ca59de8cb4c6b275cb814dcf\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"1082a9540810eb809a600b0c3db0f8db\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"93f0fb6829659d8bb4ab4eb2a720b41a\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"7489722cb7eeb682b480d5588e207ef1\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [\r\n        \"mix\",\r\n        \"blend\",\r\n       
+    \"linear interpolate\"\r\n    ],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"0b40f79a6aee451f965388c4e475aaa7\",\r\n    \"m_Id\": 2,\r\n   
+    \"m_DisplayName\": \"Y\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Y\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    0.0,\r\n    \"m_DefaultValue\": 0.0,\r\n    \"m_Labels\": [\r\n        \"Y\"\r\n   
+    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector3MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"0b6c0a8ebbc64ca78d7e4de2e164edbd\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0\r\n   
+    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_Labels\": []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    1,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty\",\r\n   
+    \"m_ObjectId\": \"0ea06de9ea69518b8855a1880fd3e73d\",\r\n    \"m_Guid\": {\r\n       
+    \"m_GuidSerialized\": \"8a201ab0-b44a-4d57-9230-d69bf561c590\"\r\n    },\r\n   
+    \"m_Name\": \"GridScale\",\r\n    \"m_DefaultRefNameVersion\": 0,\r\n    \"m_RefNameGeneratedByDisplayName\":
+    \"\",\r\n    \"m_DefaultReferenceName\": \"Vector1_716C16CB\",\r\n    \"m_OverrideReferenceName\":
+    \"_GridScale\",\r\n    \"m_GeneratePropertyBlock\": true,\r\n    \"m_UseCustomSlotLabel\":
+    false,\r\n    \"m_CustomSlotLabel\": \"\",\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_Precision\": 0,\r\n    \"overrideHLSLDeclaration\": false,\r\n    \"hlslDeclarationOverride\":
+    0,\r\n    \"m_Hidden\": false,\r\n    \"m_Value\": 1.0,\r\n    \"m_FloatType\":
+    0,\r\n    \"m_RangeValues\": {\r\n        \"x\": 0.0,\r\n        \"y\": 1.0\r\n   
+    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"0ee56b3712634927ba15b5b8c4207bd4\",\r\n    \"m_Id\": 1,\r\n   
+    \"m_DisplayName\": \"X\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"X\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    1.0,\r\n    \"m_DefaultValue\": 0.0,\r\n    \"m_Labels\": []\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"1082a9540810eb809a600b0c3db0f8db\",\r\n    \"m_Id\": 1,\r\n   
+    \"m_DisplayName\": \"B\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"B\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 1.0,\r\n        \"y\": 1.0,\r\n        \"z\": 1.0,\r\n       
+    \"w\": 1.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 1,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty\",\r\n   
+    \"m_ObjectId\": \"1334dc04d76f0e8cbea4935483dde4e9\",\r\n    \"m_Guid\": {\r\n       
+    \"m_GuidSerialized\": \"592e4d12-070e-4859-b254-0e365a362a49\"\r\n    },\r\n   
+    \"m_Name\": \"Falloff\",\r\n    \"m_DefaultRefNameVersion\": 0,\r\n    \"m_RefNameGeneratedByDisplayName\":
+    \"\",\r\n    \"m_DefaultReferenceName\": \"Vector1_DA63AF01\",\r\n    \"m_OverrideReferenceName\":
+    \"_Falloff\",\r\n    \"m_GeneratePropertyBlock\": true,\r\n    \"m_UseCustomSlotLabel\":
+    false,\r\n    \"m_CustomSlotLabel\": \"\",\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_Precision\": 0,\r\n    \"overrideHLSLDeclaration\": false,\r\n    \"hlslDeclarationOverride\":
+    0,\r\n    \"m_Hidden\": false,\r\n    \"m_Value\": 50.0,\r\n    \"m_FloatType\":
+    0,\r\n    \"m_RangeValues\": {\r\n        \"x\": 0.0,\r\n        \"y\": 1.0\r\n   
+    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.SamplerStateMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"1406c0beeabc8882b395d56fbc54504e\",\r\n    \"m_Id\": 2,\r\n   
+    \"m_DisplayName\": \"Sampler\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Sampler\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_BareResource\": false\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n    \"m_ObjectId\":
+    \"175895fad1874f55af5cedf855ef1a3a\",\r\n    \"m_Id\": 0,\r\n    \"m_DisplayName\":
+    \"Smoothness\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Smoothness\",\r\n    \"m_StageCapability\": 2,\r\n   
+    \"m_Value\": 0.5,\r\n    \"m_DefaultValue\": 0.5,\r\n    \"m_Labels\": []\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"1aa7444bcbc6638ca3000b553a79cc36\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"OverlayAmount\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_Value\": 0.0,\r\n    \"m_DefaultValue\": 0.0,\r\n    \"m_Labels\":
+    [\r\n        \"X\"\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.PositionMaterialSlot\",\r\n    \"m_ObjectId\": \"1cbed02ab8c98e8faf29b6b633885f62\",\r\n   
+    \"m_Id\": 3,\r\n    \"m_DisplayName\": \"Position\",\r\n    \"m_SlotType\": 0,\r\n   
+    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\": \"Position\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [\r\n       
+    \"X\",\r\n        \"Y\",\r\n        \"Z\"\r\n    ],\r\n    \"m_Space\": 4\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"1e9d34ea8b644620b36149ab6ed49fb2\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Base Color\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"BaseColor\",\r\n    \"m_StageCapability\":
+    2,\r\n    \"m_Value\": {\r\n        \"x\": 0.7353569269180298,\r\n        \"y\":
+    0.7353569269180298,\r\n        \"z\": 0.7353569269180298\r\n    },\r\n    \"m_DefaultValue\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0\r\n   
+    },\r\n    \"m_Labels\": [],\r\n    \"m_ColorMode\": 0,\r\n    \"m_DefaultColor\":
+    {\r\n        \"r\": 0.5,\r\n        \"g\": 0.5,\r\n        \"b\": 0.5,\r\n       
+    \"a\": 1.0\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.TangentMaterialSlot\",\r\n    \"m_ObjectId\": \"21a7eb3290134f569d96f5969d3f61e9\",\r\n   
+    \"m_Id\": 0,\r\n    \"m_DisplayName\": \"Tangent\",\r\n    \"m_SlotType\": 0,\r\n   
+    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\": \"Tangent\",\r\n    \"m_StageCapability\":
+    1,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [],\r\n    \"m_Space\":
+    0\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n   
+    \"m_ObjectId\": \"267f4f26379b4d0c97a358c4227cd87c\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.BaseColor\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"1e9d34ea8b644620b36149ab6ed49fb2\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.BaseColor\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n    \"m_ObjectId\": \"296004f1cfd446a78b035dfb17a570c6\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.AlphaClipThreshold\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"9ec7b4bec8e74dcfae4f8cfd78b9be28\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.AlphaClipThreshold\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    2,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.ColorShaderProperty\",\r\n   
+    \"m_ObjectId\": \"2c2ed82158a8f681aefc758723130473\",\r\n    \"m_Guid\": {\r\n       
+    \"m_GuidSerialized\": \"2b6e4503-63d7-4c1b-998c-9ddfae3e77a9\"\r\n    },\r\n   
+    \"m_Name\": \"BaseColor\",\r\n    \"m_DefaultRefNameVersion\": 0,\r\n    \"m_RefNameGeneratedByDisplayName\":
+    \"\",\r\n    \"m_DefaultReferenceName\": \"Color_1308AD31\",\r\n    \"m_OverrideReferenceName\":
+    \"_BaseColor\",\r\n    \"m_GeneratePropertyBlock\": true,\r\n    \"m_UseCustomSlotLabel\":
+    false,\r\n    \"m_CustomSlotLabel\": \"\",\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_Precision\": 0,\r\n    \"overrideHLSLDeclaration\": false,\r\n    \"hlslDeclarationOverride\":
+    0,\r\n    \"m_Hidden\": false,\r\n    \"m_Value\": {\r\n        \"r\": 1.0,\r\n       
+    \"g\": 0.7914925813674927,\r\n        \"b\": 0.0,\r\n        \"a\": 0.0\r\n   
+    },\r\n    \"isMainColor\": false,\r\n    \"m_ColorMode\": 0\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\r\n   
+    \"m_ObjectId\": \"2d025d62a0fc2a86bd04d00182d56fda\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Property\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": -283.0,\r\n            \"y\":
+    -159.0,\r\n            \"width\": 91.0,\r\n            \"height\": 77.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"3192d0b35f184e85b850dd9fd1bc42e5\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_Property\": {\r\n       
+    \"m_Id\": \"65284c3df8a5e28296ab2c661fb06f8e\"\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicValueMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"300dff5347562589a40184ab2372a271\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"A\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"A\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"e00\": 0.0,\r\n        \"e01\": 0.0,\r\n        \"e02\": 0.0,\r\n       
+    \"e03\": 0.0,\r\n        \"e10\": 0.0,\r\n        \"e11\": 0.0,\r\n        \"e12\":
+    0.0,\r\n        \"e13\": 0.0,\r\n        \"e20\": 0.0,\r\n        \"e21\": 0.0,\r\n       
+    \"e22\": 0.0,\r\n        \"e23\": 0.0,\r\n        \"e30\": 0.0,\r\n        \"e31\":
+    0.0,\r\n        \"e32\": 0.0,\r\n        \"e33\": 0.0\r\n    },\r\n    \"m_DefaultValue\":
+    {\r\n        \"e00\": 1.0,\r\n        \"e01\": 0.0,\r\n        \"e02\": 0.0,\r\n       
+    \"e03\": 0.0,\r\n        \"e10\": 0.0,\r\n        \"e11\": 1.0,\r\n        \"e12\":
+    0.0,\r\n        \"e13\": 0.0,\r\n        \"e20\": 0.0,\r\n        \"e21\": 0.0,\r\n       
+    \"e22\": 1.0,\r\n        \"e23\": 0.0,\r\n        \"e30\": 0.0,\r\n        \"e31\":
+    0.0,\r\n        \"e32\": 0.0,\r\n        \"e33\": 1.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"3192d0b35f184e85b850dd9fd1bc42e5\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Grid\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_BareResource\":
+    false\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n   
+    \"m_ObjectId\": \"36ee842fc8194dffa1d7c7193fda29db\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.Occlusion\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"8ff8c452a91d4c869037c44b197ee062\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Occlusion\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\r\n    \"m_ObjectId\":
+    \"393957da2fee4697915fa765e5bff654\",\r\n    \"m_Id\": 0,\r\n    \"m_DisplayName\":
+    \"Normal (Tangent Space)\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"NormalTS\",\r\n    \"m_StageCapability\": 2,\r\n   
+    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\":
+    0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [],\r\n    \"m_Space\":
+    3\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicValueMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"3974917e7985428e9852be12e6ba3dd4\",\r\n    \"m_Id\": 1,\r\n   
+    \"m_DisplayName\": \"B\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"B\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"e00\": 2.0,\r\n        \"e01\": 2.0,\r\n        \"e02\": 2.0,\r\n       
+    \"e03\": 2.0,\r\n        \"e10\": 2.0,\r\n        \"e11\": 2.0,\r\n        \"e12\":
+    2.0,\r\n        \"e13\": 2.0,\r\n        \"e20\": 2.0,\r\n        \"e21\": 2.0,\r\n       
+    \"e22\": 2.0,\r\n        \"e23\": 2.0,\r\n        \"e30\": 2.0,\r\n        \"e31\":
+    2.0,\r\n        \"e32\": 2.0,\r\n        \"e33\": 2.0\r\n    },\r\n    \"m_DefaultValue\":
+    {\r\n        \"e00\": 1.0,\r\n        \"e01\": 0.0,\r\n        \"e02\": 0.0,\r\n       
+    \"e03\": 0.0,\r\n        \"e10\": 0.0,\r\n        \"e11\": 1.0,\r\n        \"e12\":
+    0.0,\r\n        \"e13\": 0.0,\r\n        \"e20\": 0.0,\r\n        \"e21\": 0.0,\r\n       
+    \"e22\": 1.0,\r\n        \"e23\": 0.0,\r\n        \"e30\": 0.0,\r\n        \"e31\":
+    0.0,\r\n        \"e32\": 0.0,\r\n        \"e33\": 1.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorNode\",\r\n   
+    \"m_ObjectId\": \"3ca898713668c983b29c8ff63f7d33c3\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Color\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": -78.0,\r\n            \"y\":
+    -224.0,\r\n            \"width\": 208.0,\r\n            \"height\": 124.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"8f8520aa78c9ca8f8fd61b8ec62711f6\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [\r\n        \"rgba\"\r\n    ],\r\n    \"m_Precision\":
+    0,\r\n    \"m_PreviewExpanded\": true,\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\": {\r\n        \"m_SerializableColors\":
+    []\r\n    },\r\n    \"m_Color\": {\r\n        \"color\": {\r\n            \"r\":
+    1.0,\r\n            \"g\": 1.0,\r\n            \"b\": 1.0,\r\n            \"a\":
+    0.0\r\n        },\r\n        \"mode\": 0\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n    \"m_ObjectId\":
+    \"3e35bcb7b04d475cb65966746e3d13c5\",\r\n    \"m_Group\": {\r\n        \"m_Id\":
+    \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.Metallic\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n            \"y\":
+    0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"b3d280b04f394be3a343f3de302c3a72\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Metallic\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n    \"m_ObjectId\": \"490acd17761048d2ab362ba4d4ed456c\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"VertexDescription.Tangent\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"21a7eb3290134f569d96f5969d3f61e9\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Tangent\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n    \"m_ObjectId\":
+    \"4a193cd1ca59de8cb4c6b275cb814dcf\",\r\n    \"m_Id\": 0,\r\n    \"m_DisplayName\":
+    \"A\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\":
+    \"A\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\": {\r\n        \"x\":
+    0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n   
+    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.ColorRGBMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"4e33fd17c3e84bdfa4bafea1de88b640\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Emission\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Emission\",\r\n    \"m_StageCapability\":
+    2,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [],\r\n    \"m_ColorMode\":
+    1,\r\n    \"m_DefaultColor\": {\r\n        \"r\": 0.0,\r\n        \"g\": 0.0,\r\n       
+    \"b\": 0.0,\r\n        \"a\": 1.0\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"5064aba768afeb80bb7dcefb0505bf0b\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"BaseColor\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0,\r\n        \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n       
+    \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n   
+    },\r\n    \"m_Labels\": []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.BlockNode\",\r\n    \"m_ObjectId\": \"5077d82aa3814e6c86f490bc32e877b7\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.Emission\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"4e33fd17c3e84bdfa4bafea1de88b640\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Emission\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n    \"m_ObjectId\":
+    \"511d3b3558330d829191eae6b3a611e3\",\r\n    \"m_Id\": 0,\r\n    \"m_DisplayName\":
+    \"GridScale\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\":
+    \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\": 0.0,\r\n    \"m_DefaultValue\":
+    0.0,\r\n    \"m_Labels\": [\r\n        \"X\"\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"52e18188be1342b6b0371594fb366065\",\r\n    \"m_Id\": 2,\r\n   
+    \"m_DisplayName\": \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n       
+    \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"5833ead1dc134d80922fb86522504920\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Normal\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Normal\",\r\n    \"m_StageCapability\":
+    1,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [],\r\n    \"m_Space\":
+    0\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.MultiplyNode\",\r\n   
+    \"m_ObjectId\": \"58be9a53fd903b8e990da8a3efb58f3f\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Multiply\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": 612.0,\r\n            \"y\":
+    -370.0,\r\n            \"width\": 208.0,\r\n            \"height\": 302.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"300dff5347562589a40184ab2372a271\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"3974917e7985428e9852be12e6ba3dd4\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"cae42d2bc6475b8a9325d9df322b1880\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [\r\n        \"multiplication\",\r\n       
+    \"times\",\r\n        \"x\"\r\n    ],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"5faf36d597391b8e95e2b0ced22c4e2e\",\r\n    \"m_Id\": 6,\r\n   
+    \"m_DisplayName\": \"Blend\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Blend\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_Value\": 1.0,\r\n    \"m_DefaultValue\": 1.0,\r\n    \"m_Labels\":
+    [\r\n        \"X\"\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.PropertyNode\",\r\n    \"m_ObjectId\": \"6424e4ce95aee380ad1734678307ab82\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Property\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": -304.0,\r\n           
+    \"y\": 422.0,\r\n            \"width\": 91.0,\r\n            \"height\": 77.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"b2dcf195fbd3fc8f9cee3e822fbbff87\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_Property\": {\r\n       
+    \"m_Id\": \"1334dc04d76f0e8cbea4935483dde4e9\"\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Texture2DShaderProperty\",\r\n   
+    \"m_ObjectId\": \"65284c3df8a5e28296ab2c661fb06f8e\",\r\n    \"m_Guid\": {\r\n       
+    \"m_GuidSerialized\": \"392435b1-22fc-497e-a719-c5c74977ef79\"\r\n    },\r\n   
+    \"m_Name\": \"Grid\",\r\n    \"m_DefaultRefNameVersion\": 0,\r\n    \"m_RefNameGeneratedByDisplayName\":
+    \"\",\r\n    \"m_DefaultReferenceName\": \"Texture2D_96DA96FF\",\r\n    \"m_OverrideReferenceName\":
+    \"_Grid\",\r\n    \"m_GeneratePropertyBlock\": true,\r\n    \"m_UseCustomSlotLabel\":
+    false,\r\n    \"m_CustomSlotLabel\": \"\",\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_Precision\": 0,\r\n    \"overrideHLSLDeclaration\": false,\r\n    \"hlslDeclarationOverride\":
+    0,\r\n    \"m_Hidden\": false,\r\n    \"m_Value\": {\r\n        \"m_SerializedTexture\":
+    \"{\\\"texture\\\":{\\\"instanceID\\\":0}}\",\r\n        \"m_Guid\": \"\"\r\n   
+    },\r\n    \"isMainTexture\": false,\r\n    \"useTilingAndOffset\": false,\r\n   
+    \"m_Modifiable\": true,\r\n    \"m_DefaultType\": 0\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    1,\r\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalLitSubTarget\",\r\n   
+    \"m_ObjectId\": \"654fc7566b2d48bbb664b9da51756ea4\",\r\n    \"m_WorkflowMode\":
+    1,\r\n    \"m_NormalDropOffSpace\": 0,\r\n    \"m_ClearCoat\": false,\r\n   
+    \"m_BlendModePreserveSpecular\": true\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.CategoryData\",\r\n    \"m_ObjectId\":
+    \"689faba697d84dfabf6412dbc2135664\",\r\n    \"m_Name\": \"\",\r\n    \"m_ChildObjectList\":
+    [\r\n        {\r\n            \"m_Id\": \"65284c3df8a5e28296ab2c661fb06f8e\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"2c2ed82158a8f681aefc758723130473\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"7c738a8e0e86dd83a18c685ebaa63482\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"0ea06de9ea69518b8855a1880fd3e73d\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"1334dc04d76f0e8cbea4935483dde4e9\"\r\n       
+    }\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n   
+    \"m_ObjectId\": \"68f093a82b7d4fd68dcd5532ca069fa6\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"VertexDescription.Normal\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"5833ead1dc134d80922fb86522504920\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Normal\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\r\n    \"m_ObjectId\":
+    \"6f3c3982ba971388b6946b532b8ff73b\",\r\n    \"m_Group\": {\r\n        \"m_Id\":
+    \"\"\r\n    },\r\n    \"m_Name\": \"Property\",\r\n    \"m_DrawState\": {\r\n       
+    \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n            \"serializedVersion\":
+    \"2\",\r\n            \"x\": -309.0,\r\n            \"y\": 324.0,\r\n           
+    \"width\": 99.0,\r\n            \"height\": 77.0\r\n        }\r\n    },\r\n   
+    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"511d3b3558330d829191eae6b3a611e3\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_Property\": {\r\n       
+    \"m_Id\": \"0ea06de9ea69518b8855a1880fd3e73d\"\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"7489722cb7eeb682b480d5588e207ef1\",\r\n    \"m_Id\": 3,\r\n   
+    \"m_DisplayName\": \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n       
+    \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 1,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty\",\r\n   
+    \"m_ObjectId\": \"7c738a8e0e86dd83a18c685ebaa63482\",\r\n    \"m_Guid\": {\r\n       
+    \"m_GuidSerialized\": \"307727d3-0945-4629-9b35-e7913516c6ef\"\r\n    },\r\n   
+    \"m_Name\": \"OverlayAmount\",\r\n    \"m_DefaultRefNameVersion\": 0,\r\n   
+    \"m_RefNameGeneratedByDisplayName\": \"\",\r\n    \"m_DefaultReferenceName\":
+    \"Vector1_9E97F8E9\",\r\n    \"m_OverrideReferenceName\": \"OverlayAmount\",\r\n   
+    \"m_GeneratePropertyBlock\": true,\r\n    \"m_UseCustomSlotLabel\": false,\r\n   
+    \"m_CustomSlotLabel\": \"\",\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_Precision\":
+    0,\r\n    \"overrideHLSLDeclaration\": false,\r\n    \"hlslDeclarationOverride\":
+    0,\r\n    \"m_Hidden\": false,\r\n    \"m_Value\": 0.5,\r\n    \"m_FloatType\":
+    1,\r\n    \"m_RangeValues\": {\r\n        \"x\": 0.0,\r\n        \"y\": 1.0\r\n   
+    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Texture2DInputMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"8214c7b85c67f68190a08f734e280657\",\r\n    \"m_Id\": 1,\r\n   
+    \"m_DisplayName\": \"Texture\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Texture\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_BareResource\": false,\r\n    \"m_Texture\": {\r\n        \"m_SerializedTexture\":
+    \"{\\\"texture\\\":{\\\"instanceID\\\":0}}\",\r\n        \"m_Guid\": \"\"\r\n   
+    },\r\n    \"m_DefaultType\": 0\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 1,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.PositionNode\",\r\n    \"m_ObjectId\":
+    \"83942ec99371a18c87108a637cfeeda5\",\r\n    \"m_Group\": {\r\n        \"m_Id\":
+    \"\"\r\n    },\r\n    \"m_Name\": \"Position\",\r\n    \"m_DrawState\": {\r\n       
+    \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n            \"serializedVersion\":
+    \"2\",\r\n            \"x\": -933.6000366210938,\r\n            \"y\": -125.60001373291016,\r\n           
+    \"width\": 208.0,\r\n            \"height\": 312.79998779296877\r\n        }\r\n   
+    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"d73bfd387672c288b5f3f4aaa7096f82\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [\r\n        \"location\"\r\n    ],\r\n    \"m_Precision\":
+    1,\r\n    \"m_PreviewExpanded\": true,\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_PreviewMode\": 2,\r\n    \"m_CustomColors\": {\r\n        \"m_SerializableColors\":
+    []\r\n    },\r\n    \"m_Space\": 4,\r\n    \"m_PositionSource\": 0\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"892d944ab8dd400990d79dd75168b87c\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Alpha\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Alpha\",\r\n    \"m_StageCapability\":
+    2,\r\n    \"m_Value\": 1.0,\r\n    \"m_DefaultValue\": 1.0,\r\n    \"m_Labels\":
+    []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.PositionMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"8f627a7d45114cc484bf403e3569260f\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Position\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Position\",\r\n    \"m_StageCapability\":
+    1,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [],\r\n    \"m_Space\":
+    0\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"8f8520aa78c9ca8f8fd61b8ec62711f6\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n       
+    \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    },\r\n    \"m_Labels\":
+    []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"8ff8c452a91d4c869037c44b197ee062\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Ambient Occlusion\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Occlusion\",\r\n    \"m_StageCapability\":
+    2,\r\n    \"m_Value\": 1.0,\r\n    \"m_DefaultValue\": 1.0,\r\n    \"m_Labels\":
+    []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\r\n   
+    \"m_ObjectId\": \"9376a8acf520478f8a6e7e85468d3f43\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Property\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": -27.0,\r\n            \"y\":
+    416.0,\r\n            \"width\": 127.0,\r\n            \"height\": 77.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"1aa7444bcbc6638ca3000b553a79cc36\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_Property\": {\r\n       
+    \"m_Id\": \"7c738a8e0e86dd83a18c685ebaa63482\"\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"93f0fb6829659d8bb4ab4eb2a720b41a\",\r\n    \"m_Id\": 2,\r\n   
+    \"m_DisplayName\": \"T\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"T\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n       
+    \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector4MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"97e1f5511490c18d8fcdf620103788c4\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 2,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n       
+    \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    },\r\n    \"m_Labels\":
+    []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.PropertyNode\",\r\n   
+    \"m_ObjectId\": \"9cee7b649e427b80852bd7a3b2ed91cb\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Property\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": 455.0,\r\n            \"y\":
+    -370.0,\r\n            \"width\": 101.0,\r\n            \"height\": 77.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"5064aba768afeb80bb7dcefb0505bf0b\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_Property\": {\r\n       
+    \"m_Id\": \"2c2ed82158a8f681aefc758723130473\"\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"9ec7b4bec8e74dcfae4f8cfd78b9be28\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Alpha Clip Threshold\",\r\n    \"m_SlotType\": 0,\r\n   
+    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\": \"AlphaClipThreshold\",\r\n   
+    \"m_StageCapability\": 2,\r\n    \"m_Value\": 0.5,\r\n    \"m_DefaultValue\":
+    0.5,\r\n    \"m_Labels\": []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n    \"m_ObjectId\":
+    \"b2dcf195fbd3fc8f9cee3e822fbbff87\",\r\n    \"m_Id\": 0,\r\n    \"m_DisplayName\":
+    \"Falloff\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\":
+    \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\": 0.0,\r\n    \"m_DefaultValue\":
+    0.0,\r\n    \"m_Labels\": [\r\n        \"X\"\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"b3d280b04f394be3a343f3de302c3a72\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Metallic\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Metallic\",\r\n    \"m_StageCapability\":
+    2,\r\n    \"m_Value\": 0.0,\r\n    \"m_DefaultValue\": 0.0,\r\n    \"m_Labels\":
+    []\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 1,\r\n    \"m_Type\": \"UnityEditor.Rendering.Universal.ShaderGraph.UniversalTarget\",\r\n   
+    \"m_ObjectId\": \"b8d5a4d9777c454ea1b147f58cb74c00\",\r\n    \"m_ActiveSubTarget\":
+    {\r\n        \"m_Id\": \"654fc7566b2d48bbb664b9da51756ea4\"\r\n    },\r\n   
+    \"m_AllowMaterialOverride\": false,\r\n    \"m_SurfaceType\": 0,\r\n    \"m_ZTestMode\":
+    4,\r\n    \"m_ZWriteControl\": 0,\r\n    \"m_AlphaMode\": 0,\r\n    \"m_RenderFace\":
+    2,\r\n    \"m_AlphaClip\": true,\r\n    \"m_CastShadows\": true,\r\n    \"m_ReceiveShadows\":
+    true,\r\n    \"m_CustomEditorGUI\": \"\",\r\n    \"m_SupportVFX\": false\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.TriplanarNode\",\r\n   
+    \"m_ObjectId\": \"c1699351edff078e9f052737bbebcedb\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Triplanar\",\r\n    \"m_DrawState\":
+    {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n           
+    \"serializedVersion\": \"2\",\r\n            \"x\": -83.0,\r\n            \"y\":
+    -79.0,\r\n            \"width\": 208.0,\r\n            \"height\": 434.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"97e1f5511490c18d8fcdf620103788c4\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"8214c7b85c67f68190a08f734e280657\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"1406c0beeabc8882b395d56fbc54504e\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"1cbed02ab8c98e8faf29b6b633885f62\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"fc43d96e36f3d681b77c626e1d413d69\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"d25a69bb6610308da8f9fae31dea24ac\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"5faf36d597391b8e95e2b0ced22c4e2e\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [\r\n        \"project\"\r\n    ],\r\n    \"m_Precision\":
+    0,\r\n    \"m_PreviewExpanded\": true,\r\n    \"m_DismissedVersion\": 0,\r\n   
+    \"m_PreviewMode\": 2,\r\n    \"m_CustomColors\": {\r\n        \"m_SerializableColors\":
+    []\r\n    },\r\n    \"m_TextureType\": 0,\r\n    \"m_InputSpace\": 4,\r\n   
+    \"m_NormalOutputSpace\": 3\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\":
+    \"UnityEditor.ShaderGraph.DynamicValueMaterialSlot\",\r\n    \"m_ObjectId\":
+    \"cae42d2bc6475b8a9325d9df322b1880\",\r\n    \"m_Id\": 2,\r\n    \"m_DisplayName\":
+    \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\":
+    \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\": {\r\n        \"e00\":
+    0.0,\r\n        \"e01\": 0.0,\r\n        \"e02\": 0.0,\r\n        \"e03\": 0.0,\r\n       
+    \"e10\": 0.0,\r\n        \"e11\": 0.0,\r\n        \"e12\": 0.0,\r\n        \"e13\":
+    0.0,\r\n        \"e20\": 0.0,\r\n        \"e21\": 0.0,\r\n        \"e22\": 0.0,\r\n       
+    \"e23\": 0.0,\r\n        \"e30\": 0.0,\r\n        \"e31\": 0.0,\r\n        \"e32\":
+    0.0,\r\n        \"e33\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n       
+    \"e00\": 1.0,\r\n        \"e01\": 0.0,\r\n        \"e02\": 0.0,\r\n        \"e03\":
+    0.0,\r\n        \"e10\": 0.0,\r\n        \"e11\": 1.0,\r\n        \"e12\": 0.0,\r\n       
+    \"e13\": 0.0,\r\n        \"e20\": 0.0,\r\n        \"e21\": 0.0,\r\n        \"e22\":
+    1.0,\r\n        \"e23\": 0.0,\r\n        \"e30\": 0.0,\r\n        \"e31\": 0.0,\r\n       
+    \"e32\": 0.0,\r\n        \"e33\": 1.0\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"d25a69bb6610308da8f9fae31dea24ac\",\r\n    \"m_Id\": 5,\r\n   
+    \"m_DisplayName\": \"Tile\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Tile\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    1.0,\r\n    \"m_DefaultValue\": 1.0,\r\n    \"m_Labels\": [\r\n        \"X\"\r\n   
+    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector1MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"d34d4ba80d324752aa7b425f3e67335e\",\r\n    \"m_Id\": 3,\r\n   
+    \"m_DisplayName\": \"Z\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Z\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    1.0,\r\n    \"m_DefaultValue\": 0.0,\r\n    \"m_Labels\": [\r\n        \"Z\"\r\n   
+    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.Vector3MaterialSlot\",\r\n   
+    \"m_ObjectId\": \"d73bfd387672c288b5f3f4aaa7096f82\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"Out\",\r\n    \"m_SlotType\": 1,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"Out\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0\r\n   
+    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [\r\n        \"X\",\r\n        \"Y\",\r\n       
+    \"Z\"\r\n    ]\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n   
+    \"m_ObjectId\": \"dd5400fbb9d942bdab01149a4db84b6f\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.Smoothness\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"175895fad1874f55af5cedf855ef1a3a\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Smoothness\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.Vector3Node\",\r\n    \"m_ObjectId\": \"e3bd3c2ab75942c5825bb898c3071ab9\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"Vector
+    3\",\r\n    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": -617.5999755859375,\r\n           
+    \"y\": 148.80003356933595,\r\n            \"width\": 128.0,\r\n            \"height\":
+    124.80000305175781\r\n        }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n           
+    \"m_Id\": \"0ee56b3712634927ba15b5b8c4207bd4\"\r\n        },\r\n        {\r\n           
+    \"m_Id\": \"0b40f79a6aee451f965388c4e475aaa7\"\r\n        },\r\n        {\r\n           
+    \"m_Id\": \"d34d4ba80d324752aa7b425f3e67335e\"\r\n        },\r\n        {\r\n           
+    \"m_Id\": \"0b6c0a8ebbc64ca78d7e4de2e164edbd\"\r\n        }\r\n    ],\r\n   
+    \"synonyms\": [\r\n        \"3\",\r\n        \"v3\",\r\n        \"vec3\",\r\n       
+    \"float3\"\r\n    ],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_Value\": {\r\n       
+    \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n   
+    \"m_ObjectId\": \"e8f1c709955c4060a0d95a1eda47763f\",\r\n    \"m_Group\": {\r\n       
+    \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"SurfaceDescription.Alpha\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"892d944ab8dd400990d79dd75168b87c\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"SurfaceDescription.Alpha\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.BlockNode\",\r\n    \"m_ObjectId\": \"ec08944225874fb8a781209a15457422\",\r\n   
+    \"m_Group\": {\r\n        \"m_Id\": \"\"\r\n    },\r\n    \"m_Name\": \"VertexDescription.Position\",\r\n   
+    \"m_DrawState\": {\r\n        \"m_Expanded\": true,\r\n        \"m_Position\":
+    {\r\n            \"serializedVersion\": \"2\",\r\n            \"x\": 0.0,\r\n           
+    \"y\": 0.0,\r\n            \"width\": 0.0,\r\n            \"height\": 0.0\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"8f627a7d45114cc484bf403e3569260f\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\":
+    true,\r\n    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    },\r\n    \"m_SerializedDescriptor\":
+    \"VertexDescription.Position\"\r\n}\r\n\r\n{\r\n    \"m_SGVersion\": 0,\r\n   
+    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n    \"m_ObjectId\":
+    \"f1dc80d5426d41bb8423e93108d00527\",\r\n    \"m_Id\": 1,\r\n    \"m_DisplayName\":
+    \"B\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n    \"m_ShaderOutputName\":
+    \"B\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\": {\r\n        \"x\":
+    0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n   
+    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.AddNode\",\r\n    \"m_ObjectId\":
+    \"f8e254be01f545ffa9d5fe38a24f10fb\",\r\n    \"m_Group\": {\r\n        \"m_Id\":
+    \"\"\r\n    },\r\n    \"m_Name\": \"Add\",\r\n    \"m_DrawState\": {\r\n       
+    \"m_Expanded\": true,\r\n        \"m_Position\": {\r\n            \"serializedVersion\":
+    \"2\",\r\n            \"x\": -438.3999328613281,\r\n            \"y\": -26.399978637695314,\r\n           
+    \"width\": 129.59994506835938,\r\n            \"height\": 117.59998321533203\r\n       
+    }\r\n    },\r\n    \"m_Slots\": [\r\n        {\r\n            \"m_Id\": \"fa6f7ecc7f934a01aeba48ae2ec4c095\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"f1dc80d5426d41bb8423e93108d00527\"\r\n       
+    },\r\n        {\r\n            \"m_Id\": \"52e18188be1342b6b0371594fb366065\"\r\n       
+    }\r\n    ],\r\n    \"synonyms\": [\r\n        \"addition\",\r\n        \"sum\",\r\n       
+    \"plus\"\r\n    ],\r\n    \"m_Precision\": 0,\r\n    \"m_PreviewExpanded\": false,\r\n   
+    \"m_DismissedVersion\": 0,\r\n    \"m_PreviewMode\": 0,\r\n    \"m_CustomColors\":
+    {\r\n        \"m_SerializableColors\": []\r\n    }\r\n}\r\n\r\n{\r\n    \"m_SGVersion\":
+    0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.DynamicVectorMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"fa6f7ecc7f934a01aeba48ae2ec4c095\",\r\n    \"m_Id\": 0,\r\n   
+    \"m_DisplayName\": \"A\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\": false,\r\n   
+    \"m_ShaderOutputName\": \"A\",\r\n    \"m_StageCapability\": 3,\r\n    \"m_Value\":
+    {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n        \"z\": 0.0,\r\n       
+    \"w\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0,\r\n        \"w\": 0.0\r\n    }\r\n}\r\n\r\n{\r\n   
+    \"m_SGVersion\": 0,\r\n    \"m_Type\": \"UnityEditor.ShaderGraph.NormalMaterialSlot\",\r\n   
+    \"m_ObjectId\": \"fc43d96e36f3d681b77c626e1d413d69\",\r\n    \"m_Id\": 4,\r\n   
+    \"m_DisplayName\": \"Normal\",\r\n    \"m_SlotType\": 0,\r\n    \"m_Hidden\":
+    false,\r\n    \"m_ShaderOutputName\": \"Normal\",\r\n    \"m_StageCapability\":
+    3,\r\n    \"m_Value\": {\r\n        \"x\": 0.0,\r\n        \"y\": 0.0,\r\n       
+    \"z\": 0.0\r\n    },\r\n    \"m_DefaultValue\": {\r\n        \"x\": 0.0,\r\n       
+    \"y\": 0.0,\r\n        \"z\": 0.0\r\n    },\r\n    \"m_Labels\": [\r\n       
+    \"X\",\r\n        \"Y\",\r\n        \"Z\"\r\n    ],\r\n    \"m_Space\": 4\r\n}\r\n\r\n"
+  m_AssetMaybeChangedOnDisk: 0
+  m_AssetMaybeDeleted: 0
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 13}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1106.5
+    height: 1030
+  m_MinSize: {x: 200, y: 300}
+  m_MaxSize: {x: 16192, y: 24288}
+  vertical: 1
+  controlID: 4399
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 5}
+  - {fileID: 7}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1106.5
+    height: 616.5
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 16192, y: 16192}
+  vertical: 0
+  controlID: 4400
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: SceneHierarchyWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 288.5
+    height: 616.5
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 6}
+  m_Panes:
+  - {fileID: 6}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &6
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12061, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Hierarchy
+    m_Image: {fileID: -3734745235275155857, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 287.5
+    height: 595.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SceneHierarchy:
+    m_TreeViewState:
+      scrollPos: {x: 0, y: 0}
+      m_SelectedIDs: 22700000
+      m_LastClickedID: 0
+      m_ExpandedIDs: 00c9ffff36fbffff
+      m_RenameOverlay:
+        m_UserAcceptedRename: 0
+        m_Name: 
+        m_OriginalName: 
+        m_EditFieldRect:
+          serializedVersion: 2
+          x: 0
+          y: 0
+          width: 0
+          height: 0
+        m_UserData: 0
+        m_IsWaitingForDelay: 0
+        m_IsRenaming: 0
+        m_OriginalEventType: 11
+        m_IsRenamingFilename: 0
+        m_ClientGUIView: {fileID: 5}
+      m_SearchString: 
+    m_ExpandedScenes: []
+    m_CurrenRootInstanceID: 0
+    m_LockTracker:
+      m_IsLocked: 0
+    m_CurrentSortingName: TransformSorting
+  m_WindowGUID: 5ca58d422853a451795f2525e2138d9f
+--- !u!114 &7
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 8}
+  - {fileID: 11}
+  m_Position:
+    serializedVersion: 2
+    x: 288.5
+    y: 0
+    width: 818
+    height: 616.5
+  m_MinSize: {x: 100, y: 200}
+  m_MaxSize: {x: 8096, y: 16192}
+  vertical: 1
+  controlID: 4401
+--- !u!114 &8
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: GameView
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 818
+    height: 329.5
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 9}
+  m_Panes:
+  - {fileID: 9}
+  - {fileID: 10}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &9
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Game
+    m_Image: {fileID: 4621777727084837110, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 288.5
+    y: 30
+    width: 816
+    height: 308.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SerializedViewNames:
+  - UnityEditor.DeviceSimulation.SimulatorWindow
+  m_SerializedViewValues:
+  - /Users/batista/QinProject/UnityProject/TheLegendOfMaple/Library/PlayModeViewStates/0fcee5417247c472ba153d31d24ac48a
+  m_PlayModeViewName: GameView
+  m_ShowGizmos: 0
+  m_TargetDisplay: 0
+  m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
+  m_TargetSize: {x: 1632, y: 575}
+  m_TextureFilterMode: 0
+  m_TextureHideFlags: 61
+  m_RenderIMGUI: 1
+  m_EnterPlayModeBehavior: 0
+  m_UseMipMap: 0
+  m_VSyncEnabled: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000600000006000000000000000000000000000000000000000000000000000000
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    hZoomLockedByDefault: 0
+    vZoomLockedByDefault: 0
+    m_HBaseRangeMin: -408
+    m_HBaseRangeMax: 408
+    m_VBaseRangeMin: -143.75
+    m_VBaseRangeMax: 143.75
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoomHorizontal: 0
+    m_EnableSliderZoomVertical: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 21
+      width: 816
+      height: 287.5
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 408, y: 143.75}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -408
+      y: -143.75
+      width: 816
+      height: 287.5
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_LastWindowPixelSize: {x: 1632, y: 617}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 00000000000000000000
+  m_XRRenderMode: 0
+  m_RenderTexture: {fileID: 0}
+--- !u!114 &10
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13953, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 800, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Package Manager
+    m_Image: {fileID: 5076950121296946556, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 240.5
+    y: 125
+    width: 825.5
+    height: 490
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &11
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: MaterialGraphEditWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 329.5
+    width: 818
+    height: 287
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 2}
+  m_Panes:
+  - {fileID: 12}
+  - {fileID: 2}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &12
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12013, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Scene
+    m_Image: {fileID: 8634526014445323508, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 288.5
+    y: 453
+    width: 816
+    height: 347.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData:
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -101, y: -26}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 3
+      id: Tool Settings
+      index: 0
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: -141, y: -144}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 3
+      id: unity-grid-and-snap-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-scene-view-toolbar
+      index: 0
+      layout: 1
+    - dockPosition: 1
+      containerId: overlay-toolbar__top
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 1
+      id: unity-search-toolbar
+      index: 1
+      layout: 1
+    - dockPosition: 0
+      containerId: overlay-container--left
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 0, y: 25}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: unity-transform-toolbar
+      index: 0
+      layout: 2
+    - dockPosition: 0
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 1
+      snapOffset: {x: 67.5, y: 86}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Orientation
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Light Settings
+      index: 0
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Camera
+      index: 1
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Constraints
+      index: 2
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Cloth Collisions
+      index: 3
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Navmesh Display
+      index: 4
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Agent Display
+      index: 5
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Obstacle Display
+      index: 6
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Occlusion Culling
+      index: 7
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Physics Debugger
+      index: 8
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Scene Visibility
+      index: 9
+      layout: 4
+    - dockPosition: 1
+      containerId: overlay-container--right
+      floating: 0
+      collapsed: 0
+      displayed: 0
+      snapOffset: {x: 0, y: 0}
+      snapOffsetDelta: {x: 0, y: 0}
+      snapCorner: 0
+      id: Scene View/Particles
+      index: 10
+      layout: 4
+  m_WindowGUID: 89e92b25426e1414caabeb48425b1b15
+  m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
+  m_SceneIsLit: 1
+  m_SceneLighting: 1
+  m_2DMode: 1
+  m_isRotationLocked: 0
+  m_PlayAudio: 0
+  m_AudioPlay: 0
+  m_Position:
+    m_Target: {x: 1.436177, y: 0.60092694, z: 0.02640821}
+    speed: 2
+    m_Value: {x: 1.436177, y: 0.60092694, z: 0.02640821}
+  m_RenderMode: 0
+  m_CameraMode:
+    drawMode: 0
+    name: Shaded
+    section: Shading Mode
+  m_ValidateTrueMetals: 0
+  m_DoValidateTrueMetals: 0
+  m_ExposureSliderValue: 0
+  m_SceneViewState:
+    m_AlwaysRefresh: 1
+    showFog: 1
+    showSkybox: 1
+    showFlares: 1
+    showImageEffects: 1
+    showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
+  m_Grid:
+    xGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 0, y: 0}
+    yGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    zGrid:
+      m_Fade:
+        m_Target: 0
+        speed: 2
+        m_Value: 0
+      m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
+      m_Pivot: {x: 0, y: 0, z: 0}
+      m_Size: {x: 1, y: 1}
+    m_ShowGrid: 0
+    m_GridAxis: 1
+    m_gridOpacity: 0.5
+  m_Rotation:
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    speed: 2
+    m_Value: {x: 0, y: 0, z: 0, w: 1}
+  m_Size:
+    m_Target: 2.280656
+    speed: 2
+    m_Value: 2.280656
+  m_Ortho:
+    m_Target: 1
+    speed: 2
+    m_Value: 1
+  m_CameraSettings:
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
+    m_SpeedMin: 0.01
+    m_SpeedMax: 2
+    m_EasingEnabled: 1
+    m_EasingDuration: 0.4
+    m_AccelerationEnabled: 1
+    m_FieldOfViewHorizontalOrVertical: 60
+    m_NearClip: 0.03
+    m_FarClip: 10000
+    m_DynamicClip: 1
+    m_OcclusionCulling: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
+  m_ReplacementShader: {fileID: 0}
+  m_ReplacementString: 
+  m_SceneVisActive: 1
+  m_LastLockedObject: {fileID: 0}
+  m_ViewIsLockedToObject: 0
+--- !u!114 &13
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ConsoleWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 616.5
+    width: 1106.5
+    height: 413.5
+  m_MinSize: {x: 101, y: 121}
+  m_MaxSize: {x: 4001, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  - {fileID: 15}
+  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 18}
+  - {fileID: 19}
+  - {fileID: 20}
+  - {fileID: 21}
+  - {fileID: 22}
+  m_Selected: 0
+  m_LastSelected: 2
+--- !u!114 &14
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12003, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Console
+    m_Image: {fileID: -4950941429401207979, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 646.5
+    width: 1105.5
+    height: 392.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &15
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animation
+    m_Image: {fileID: -3237396543322336831, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 821.5
+    width: 1204.5
+    height: 217.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_LockTracker:
+    m_IsLocked: 0
+  m_LastSelectedObjectID: 28068
+--- !u!114 &16
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Animator
+    m_Image: {fileID: 1711060831702674872, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 484
+    width: 892
+    height: 525
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ViewTransforms:
+    m_KeySerializationHelper:
+    - {fileID: 4331297841432072029, guid: b9a127990341240e8a9e95d309ddf82e, type: 2}
+    m_ValueSerializationHelper:
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+  m_PreviewAnimator: {fileID: 0}
+  m_AnimatorController: {fileID: 9100000, guid: b9a127990341240e8a9e95d309ddf82e,
+    type: 2}
+  m_BreadCrumbs:
+  - m_Target: {fileID: 4331297841432072029, guid: b9a127990341240e8a9e95d309ddf82e,
+      type: 2}
+    m_ScrollPosition: {x: 0, y: 0}
+  stateMachineGraph: {fileID: 0}
+  stateMachineGraphGUI: {fileID: 0}
+  blendTreeGraph: {fileID: 0}
+  blendTreeGraphGUI: {fileID: 0}
+  m_AutoLiveLink: 1
+  m_MiniTool: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_CurrentEditor: 1
+  m_LayerEditor:
+    m_SelectedLayerIndex: 0
+--- !u!114 &17
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13202, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 400, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Frame Debug
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 732.5
+    width: 973.5
+    height: 276.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ListWidth: 300
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: ffffffff
+    m_LastClickedID: 0
+    m_ExpandedIDs: 00000000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &18
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12070, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 880, y: 216}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Profiler
+    m_Image: {fileID: 2169972056302973491, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 397.5
+    width: 973.5
+    height: 611.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_Recording: 1
+  m_ActiveNativePlatformSupportModuleName: 
+  m_AllModules:
+  - rid: 3811993936015654912
+  - rid: 3811993936015654913
+  - rid: 3811993936015654914
+  - rid: 3811993936015654915
+  - rid: 3811993936015654916
+  - rid: 3811993936015654917
+  - rid: 3811993936015654918
+  - rid: 3811993936015654919
+  - rid: 3811993936015654920
+  - rid: 3811993936015654921
+  - rid: 3811993936015654922
+  - rid: 3811993936015654923
+  - rid: 3811993936015654924
+  - rid: 3811993936015654925
+  - rid: 3811993936015654926
+  - rid: 3811993936015654927
+  m_CallstackRecordMode: 7
+  m_ClearOnPlay: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 3811993936015654912
+      type: {class: CPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.CPUProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewType: 2
+        updateViewLive: 0
+        m_CurrentFrameIndex: -1
+        m_HierarchyOverruledThreadFromSelection: 0
+        m_ProfilerViewFilteringOptions: 1
+        m_FrameDataHierarchyView:
+          m_Serialized: 1
+          m_TreeViewState:
+            scrollPos: {x: 0, y: 80}
+            m_SelectedIDs: 
+            m_LastClickedID: 0
+            m_ExpandedIDs: 040000003a000000440000005200000081000000df000000e0000000111a0000241a0000
+            m_RenameOverlay:
+              m_UserAcceptedRename: 0
+              m_Name: 
+              m_OriginalName: 
+              m_EditFieldRect:
+                serializedVersion: 2
+                x: 0
+                y: 0
+                width: 0
+                height: 0
+              m_UserData: 0
+              m_IsWaitingForDelay: 0
+              m_IsRenaming: 0
+              m_OriginalEventType: 11
+              m_IsRenamingFilename: 0
+              m_ClientGUIView: {fileID: 0}
+            m_SearchString: 
+          m_MultiColumnHeaderState:
+            m_Columns:
+            - width: 200
+              sortedAscending: 1
+              headerContent:
+                m_Text: Overview
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 200
+              maxWidth: 1000000
+              autoResize: 1
+              allowToggleVisibility: 0
+              canSort: 1
+              userData: 0
+            - width: 80
+              sortedAscending: 0
+              headerContent:
+                m_Text: Total
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 50
+              maxWidth: 1000000
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            - width: 80
+              sortedAscending: 0
+              headerContent:
+                m_Text: Self
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 50
+              maxWidth: 1000000
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            - width: 80
+              sortedAscending: 0
+              headerContent:
+                m_Text: Calls
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 50
+              maxWidth: 1000000
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            - width: 80
+              sortedAscending: 0
+              headerContent:
+                m_Text: GC Alloc
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 50
+              maxWidth: 1000000
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            - width: 80
+              sortedAscending: 0
+              headerContent:
+                m_Text: Time ms
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 50
+              maxWidth: 1000000
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            - width: 80
+              sortedAscending: 0
+              headerContent:
+                m_Text: Self ms
+                m_Image: {fileID: 0}
+                m_Tooltip: 
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 50
+              maxWidth: 1000000
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            - width: 25
+              sortedAscending: 0
+              headerContent:
+                m_Text: 
+                m_Image: {fileID: -5161429177145976760, guid: 0000000000000000d000000000000000,
+                  type: 0}
+                m_Tooltip: Warnings
+              contextMenuText: 
+              headerTextAlignment: 0
+              sortingArrowAlignment: 2
+              minWidth: 25
+              maxWidth: 25
+              autoResize: 0
+              allowToggleVisibility: 1
+              canSort: 1
+              userData: 0
+            m_VisibleColumns: 0000000001000000020000000300000004000000050000000600000007000000
+            m_SortedColumns: 05000000
+          m_ThreadIndexInThreadNames: 0
+          m_DetailedViewType: 2
+          m_DetailedViewSpliterState:
+            ID: 23131
+            splitterInitialOffset: 972
+            currentActiveSplitter: -1
+            realSizes:
+            - 623
+            - 453
+            relativeSizes:
+            - 0.57916665
+            - 0.42083335
+            minSizes:
+            - 450
+            - 50
+            maxSizes:
+            - 0
+            - 0
+            lastTotalSize: 1076
+            splitSize: 6
+            xOffset: 0
+            m_Version: 1
+            oldRealSizes: 
+            oldMinSizes: 
+            oldMaxSizes: 
+            oldSplitSize: 0
+          m_DetailedObjectsView:
+            m_SelectedID: 309
+            m_TreeViewState:
+              scrollPos: {x: 0, y: 0}
+              m_SelectedIDs: 00000000
+              m_LastClickedID: 0
+              m_ExpandedIDs: 
+              m_RenameOverlay:
+                m_UserAcceptedRename: 0
+                m_Name: 
+                m_OriginalName: 
+                m_EditFieldRect:
+                  serializedVersion: 2
+                  x: 0
+                  y: 0
+                  width: 0
+                  height: 0
+                m_UserData: 0
+                m_IsWaitingForDelay: 0
+                m_IsRenaming: 0
+                m_OriginalEventType: 11
+                m_IsRenamingFilename: 0
+                m_ClientGUIView: {fileID: 0}
+              m_SearchString: 
+            m_MultiColumnHeaderState:
+              m_Columns:
+              - width: 80
+                sortedAscending: 1
+                headerContent:
+                  m_Text: Object Name
+                  m_Image: {fileID: 0}
+                  m_Tooltip: 
+                contextMenuText: 
+                headerTextAlignment: 0
+                sortingArrowAlignment: 2
+                minWidth: 60
+                maxWidth: 1000000
+                autoResize: 1
+                allowToggleVisibility: 0
+                canSort: 1
+                userData: 0
+              - width: 80
+                sortedAscending: 0
+                headerContent:
+                  m_Text: Total
+                  m_Image: {fileID: 0}
+                  m_Tooltip: 
+                contextMenuText: 
+                headerTextAlignment: 0
+                sortingArrowAlignment: 2
+                minWidth: 50
+                maxWidth: 1000000
+                autoResize: 0
+                allowToggleVisibility: 1
+                canSort: 1
+                userData: 0
+              - width: 80
+                sortedAscending: 0
+                headerContent:
+                  m_Text: GC Alloc
+                  m_Image: {fileID: 0}
+                  m_Tooltip: 
+                contextMenuText: 
+                headerTextAlignment: 0
+                sortingArrowAlignment: 2
+                minWidth: 50
+                maxWidth: 1000000
+                autoResize: 0
+                allowToggleVisibility: 1
+                canSort: 1
+                userData: 0
+              - width: 80
+                sortedAscending: 0
+                headerContent:
+                  m_Text: Time ms
+                  m_Image: {fileID: 0}
+                  m_Tooltip: 
+                contextMenuText: 
+                headerTextAlignment: 0
+                sortingArrowAlignment: 2
+                minWidth: 50
+                maxWidth: 1000000
+                autoResize: 0
+                allowToggleVisibility: 1
+                canSort: 1
+                userData: 0
+              m_VisibleColumns: 00000000010000000200000003000000
+              m_SortedColumns: 03000000
+            m_VertSplit:
+              ID: 24676
+              splitterInitialOffset: 0
+              currentActiveSplitter: -1
+              realSizes:
+              - 368
+              - 158
+              relativeSizes:
+              - 0.7
+              - 0.3
+              minSizes:
+              - 50
+              - 50
+              maxSizes:
+              - 0
+              - 0
+              lastTotalSize: 526
+              splitSize: 6
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+          m_DetailedCallsView:
+            m_SelectedID: -1
+            m_VertSplit:
+              ID: 23195
+              splitterInitialOffset: 319
+              currentActiveSplitter: -1
+              realSizes:
+              - 50
+              - 50
+              relativeSizes:
+              - 0.54832345
+              - 0.45167655
+              minSizes:
+              - 50
+              - 50
+              maxSizes:
+              - 0
+              - 0
+              lastTotalSize: 60
+              splitSize: 6
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+            m_CalleesTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 05000000
+                m_LastClickedID: 5
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 419
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 0100000003000000
+            m_CallersTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 03000000
+                m_LastClickedID: 3
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 419
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 0100000003000000
+          m_FullThreadName: Main Thread
+          m_ThreadName: Main Thread
+          <threadId>k__BackingField: 4671346176
+          <threadIndex>k__BackingField: 0
+          m_GroupName: 
+    - rid: 3811993936015654913
+      type: {class: GPUProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.GPUProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewType: 0
+        updateViewLive: 0
+        m_CurrentFrameIndex: -1
+        m_HierarchyOverruledThreadFromSelection: 0
+        m_ProfilerViewFilteringOptions: 1
+        m_FrameDataHierarchyView:
+          m_Serialized: 0
+          m_TreeViewState:
+            scrollPos: {x: 0, y: 0}
+            m_SelectedIDs: 
+            m_LastClickedID: 0
+            m_ExpandedIDs: 
+            m_RenameOverlay:
+              m_UserAcceptedRename: 0
+              m_Name: 
+              m_OriginalName: 
+              m_EditFieldRect:
+                serializedVersion: 2
+                x: 0
+                y: 0
+                width: 0
+                height: 0
+              m_UserData: 0
+              m_IsWaitingForDelay: 0
+              m_IsRenaming: 0
+              m_OriginalEventType: 11
+              m_IsRenamingFilename: 0
+              m_ClientGUIView: {fileID: 0}
+            m_SearchString: 
+          m_MultiColumnHeaderState:
+            m_Columns: []
+            m_VisibleColumns: 
+            m_SortedColumns: 
+          m_ThreadIndexInThreadNames: 0
+          m_DetailedViewType: 0
+          m_DetailedViewSpliterState:
+            ID: 0
+            splitterInitialOffset: 0
+            currentActiveSplitter: 0
+            realSizes: []
+            relativeSizes: []
+            minSizes: []
+            maxSizes: []
+            lastTotalSize: 0
+            splitSize: 0
+            xOffset: 0
+            m_Version: 1
+            oldRealSizes: 
+            oldMinSizes: 
+            oldMaxSizes: 
+            oldSplitSize: 0
+          m_DetailedObjectsView:
+            m_SelectedID: 0
+            m_TreeViewState:
+              scrollPos: {x: 0, y: 0}
+              m_SelectedIDs: 
+              m_LastClickedID: 0
+              m_ExpandedIDs: 
+              m_RenameOverlay:
+                m_UserAcceptedRename: 0
+                m_Name: 
+                m_OriginalName: 
+                m_EditFieldRect:
+                  serializedVersion: 2
+                  x: 0
+                  y: 0
+                  width: 0
+                  height: 0
+                m_UserData: 0
+                m_IsWaitingForDelay: 0
+                m_IsRenaming: 0
+                m_OriginalEventType: 11
+                m_IsRenamingFilename: 0
+                m_ClientGUIView: {fileID: 0}
+              m_SearchString: 
+            m_MultiColumnHeaderState:
+              m_Columns: []
+              m_VisibleColumns: 
+              m_SortedColumns: 
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+          m_DetailedCallsView:
+            m_SelectedID: -1
+            m_VertSplit:
+              ID: 0
+              splitterInitialOffset: 0
+              currentActiveSplitter: 0
+              realSizes: []
+              relativeSizes: []
+              minSizes: []
+              maxSizes: []
+              lastTotalSize: 0
+              splitSize: 0
+              xOffset: 0
+              m_Version: 1
+              oldRealSizes: 
+              oldMinSizes: 
+              oldMaxSizes: 
+              oldSplitSize: 0
+            m_CalleesTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 419
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 0100000003000000
+            m_CallersTreeView:
+              m_ViewState:
+                scrollPos: {x: 0, y: 0}
+                m_SelectedIDs: 
+                m_LastClickedID: 0
+                m_ExpandedIDs: 
+                m_RenameOverlay:
+                  m_UserAcceptedRename: 0
+                  m_Name: 
+                  m_OriginalName: 
+                  m_EditFieldRect:
+                    serializedVersion: 2
+                    x: 0
+                    y: 0
+                    width: 0
+                    height: 0
+                  m_UserData: 0
+                  m_IsWaitingForDelay: 0
+                  m_IsRenaming: 0
+                  m_OriginalEventType: 11
+                  m_IsRenamingFilename: 0
+                  m_ClientGUIView: {fileID: 0}
+                m_SearchString: 
+              m_ViewHeaderState:
+                m_Columns:
+                - width: 419
+                  sortedAscending: 1
+                  headerContent:
+                    m_Text: Called From
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 'Parents the selected function is called from
+
+
+                      (Press
+                      ''F'' for frame selection)'
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 150
+                  maxWidth: 1000000
+                  autoResize: 1
+                  allowToggleVisibility: 0
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Calls
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total number of calls in a selected frame
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: GC Alloc
+                    m_Image: {fileID: 0}
+                    m_Tooltip: 
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time ms
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Total time the selected function spends within a parent
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                - width: 60
+                  sortedAscending: 0
+                  headerContent:
+                    m_Text: Time %
+                    m_Image: {fileID: 0}
+                    m_Tooltip: Shows how often the selected function was called from
+                      the parent call
+                  contextMenuText: 
+                  headerTextAlignment: 0
+                  sortingArrowAlignment: 2
+                  minWidth: 60
+                  maxWidth: 1000000
+                  autoResize: 0
+                  allowToggleVisibility: 1
+                  canSort: 1
+                  userData: 0
+                m_VisibleColumns: 0000000001000000020000000300000004000000
+                m_SortedColumns: 0100000003000000
+          m_FullThreadName: Main Thread
+          m_ThreadName: Main Thread
+          <threadId>k__BackingField: 0
+          <threadIndex>k__BackingField: -1
+          m_GroupName: 
+    - rid: 3811993936015654914
+      type: {class: RenderingProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.RenderingProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654915
+      type: {class: MemoryProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.MemoryProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ViewSplit:
+          ID: 0
+          splitterInitialOffset: 0
+          currentActiveSplitter: -1
+          realSizes:
+          - 0
+          - 0
+          relativeSizes:
+          - 0.7
+          - 0.3
+          minSizes:
+          - 450
+          - 50
+          maxSizes:
+          - 0
+          - 0
+          lastTotalSize: 0
+          splitSize: 6
+          xOffset: 0
+          m_Version: 1
+          oldRealSizes: 
+          oldMinSizes: 
+          oldMaxSizes: 
+          oldSplitSize: 0
+    - rid: 3811993936015654916
+      type: {class: AudioProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.AudioProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_ShowInactiveDSPChains: 0
+        m_HighlightAudibleDSPChains: 1
+        m_DSPGraphZoomFactor: 1
+    - rid: 3811993936015654917
+      type: {class: VideoProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.VideoProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654918
+      type: {class: PhysicsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.PhysicsProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654919
+      type: {class: Physics2DProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.Physics2DProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654920
+      type: {class: NetworkingMessagesProfilerModule, ns: UnityEditorInternal.Profiling,
+        asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.NetworkingMessagesProfilerModule,
+          UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654921
+      type: {class: NetworkingOperationsProfilerModule, ns: UnityEditorInternal.Profiling,
+        asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.NetworkingOperationsProfilerModule,
+          UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_NetworkSplit:
+          ID: 0
+          splitterInitialOffset: 0
+          currentActiveSplitter: -1
+          realSizes:
+          - 0
+          - 0
+          relativeSizes:
+          - 0.2
+          - 0.8
+          minSizes:
+          - 100
+          - 100
+          maxSizes:
+          - 0
+          - 0
+          lastTotalSize: 0
+          splitSize: 6
+          xOffset: 0
+          m_Version: 1
+          oldRealSizes: 
+          oldMinSizes: 
+          oldMaxSizes: 
+          oldSplitSize: 0
+        msgNames:
+        - UserMessage
+        - ObjectDestroy
+        - ClientRpc
+        - ObjectSpawn
+        - Owner
+        - Command
+        - LocalPlayerTransform
+        - SyncEvent
+        - SyncVars
+        - SyncList
+        - ObjectSpawnScene
+        - NetworkInfo
+        - SpawnFinished
+        - ObjectHide
+        - CRC
+        - ClientAuthority
+    - rid: 3811993936015654922
+      type: {class: UIProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.UIProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654923
+      type: {class: UIDetailsProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.UIDetailsProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654924
+      type: {class: GlobalIlluminationProfilerModule, ns: UnityEditorInternal.Profiling,
+        asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.GlobalIlluminationProfilerModule,
+          UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654925
+      type: {class: VirtualTexturingProfilerModule, ns: UnityEditorInternal.Profiling,
+        asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.VirtualTexturingProfilerModule,
+          UnityEditor.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+        m_VTProfilerView:
+          rid: 3811993936015654929
+    - rid: 3811993936015654926
+      type: {class: FileIOProfilerModule, ns: UnityEditorInternal.Profiling, asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.FileIOProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654927
+      type: {class: AssetLoadingProfilerModule, ns: UnityEditorInternal.Profiling,
+        asm: UnityEditor.CoreModule}
+      data:
+        m_Identifier: UnityEditorInternal.Profiling.AssetLoadingProfilerModule, UnityEditor.CoreModule,
+          Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+        m_PaneScroll: {x: 0, y: 0}
+    - rid: 3811993936015654929
+      type: {class: VirtualTexturingProfilerView, ns: UnityEditor, asm: UnityEditor.CoreModule}
+      data:
+        m_SortAscending: 0
+        m_SortedColumn: -1
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12096, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Physics Debug
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 616
+    width: 1076
+    height: 393
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_MainScrollPos: {x: 0, y: 0}
+--- !u!114 &20
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12090, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Occlusion
+    m_Image: {fileID: -6304520642066340446, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 654
+    width: 1076
+    height: 355
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &21
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12373, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Audio Mixer
+    m_Image: {fileID: -3283902137440876849, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 130
+    y: 641.5
+    width: 784
+    height: 176.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_MixersTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 24680
+    m_ExpandedIDs: 12eb343c
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_LayoutStripsOnTop:
+    m_VerticalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 65
+      - 35
+      relativeSizes:
+      - 0.65
+      - 0.35000002
+      minSizes:
+      - 85
+      - 105
+      maxSizes:
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+    m_HorizontalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 60
+      - 60
+      - 60
+      - 60
+      relativeSizes:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+      minSizes:
+      - 85
+      - 85
+      - 85
+      - 85
+      maxSizes:
+      - 0
+      - 0
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+  m_LayoutStripsOnRight:
+    m_VerticalSplitter:
+      ID: 0
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 60
+      - 60
+      - 60
+      - 60
+      relativeSizes:
+      - 0.25
+      - 0.25
+      - 0.25
+      - 0.25
+      minSizes:
+      - 100
+      - 85
+      - 85
+      - 85
+      maxSizes:
+      - 0
+      - 0
+      - 0
+      - 0
+      lastTotalSize: 0
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+    m_HorizontalSplitter:
+      ID: 209
+      splitterInitialOffset: 0
+      currentActiveSplitter: -1
+      realSizes:
+      - 235
+      - 549
+      relativeSizes:
+      - 0.3
+      - 0.7
+      minSizes:
+      - 160
+      - 160
+      maxSizes:
+      - 0
+      - 0
+      lastTotalSize: 784
+      splitSize: 6
+      xOffset: 0
+      m_Version: 1
+      oldRealSizes: 
+      oldMinSizes: 
+      oldMaxSizes: 
+      oldSplitSize: 0
+  m_SectionOrder: 00000000030000000100000002000000
+  m_LayoutMode: 1
+  m_SortGroupsAlphabetically: 0
+  m_ShowReferencedBuses: 1
+  m_ShowBusConnections: 0
+  m_ShowBusConnectionsOfSelection: 0
+--- !u!114 &22
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12097, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 500, y: 250}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Light Explorer
+    m_Image: {fileID: -1477008817101679558, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 0
+    y: 821.5
+    width: 1323.5
+    height: 217.5
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &23
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: ProjectBrowser
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1106.5
+    y: 0
+    width: 341
+    height: 1030
+  m_MinSize: {x: 232, y: 271}
+  m_MaxSize: {x: 10002, y: 10021}
+  m_ActualView: {fileID: 24}
+  m_Panes:
+  - {fileID: 24}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &24
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
+  m_TitleContent:
+    m_Text: Project
+    m_Image: {fileID: -5179483145760003458, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1106.5
+    y: 30
+    width: 339
+    height: 1009
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_SceneHandles: 
+    m_ShowAllHits: 0
+    m_SkipHidden: 0
+    m_SearchArea: 1
+    m_Folders:
+    - Assets/PolygonPrototype/Prefabs/Buildings/Polygon
+    m_Globs: []
+    m_OriginalText: 
+  m_ViewMode: 0
+  m_StartGridSize: 16
+  m_LastFolders: []
+  m_LastFoldersGridSize: 16
+  m_LastProjectPath: /Users/qin/qinProject/Unity3DProject/UnityStrategy
+  m_LockTracker:
+    m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: aa580000
+    m_LastClickedID: 22698
+    m_ExpandedIDs: ffffffff00000000ca670000cc670000ce6700006e690000786900008a6f0000d86f0000e06f0000ea6f000018700000347000004a7000004e7000006674000068740000ffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 22700000
+    m_LastClickedID: 28706
+    m_ExpandedIDs: ffffffff00000000ca670000cc670000ce6700006e690000786900008a6f0000d86f0000e06f0000ea6f000018700000347000004a7000004e7000006674000068740000ffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 23}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 22700000
+    m_LastClickedInstanceID: 28706
+    m_HadKeyboardFocusLastEvent: 0
+    m_ExpandedInstanceIDs: c623000000000000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 16
+  m_SkipHiddenPackages: 0
+  m_DirectoriesAreaWidth: 158
+--- !u!114 &25
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: InspectorWindow
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1447.5
+    y: 0
+    width: 472.5
+    height: 1030
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 26}
+  m_Panes:
+  - {fileID: 26}
+  - {fileID: 27}
+  - {fileID: 28}
+  - {fileID: 29}
+  - {fileID: 30}
+  m_Selected: 0
+  m_LastSelected: 2
+--- !u!114 &26
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Inspector
+    m_Image: {fileID: -440750813802333266, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1447.5
+    y: 30
+    width: 471.5
+    height: 1009
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_ObjectsLockedBeforeSerialization: []
+  m_InstanceIDsLockedBeforeSerialization: 
+  m_PreviewResizer:
+    m_CachedPref: 290
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_LastInspectedObjectInstanceID: -1
+  m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_InspectorMode: 0
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
+--- !u!114 &27
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13855, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 310, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Preferences
+    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1447.5
+    y: 30
+    width: 471.5
+    height: 1009
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 0
+  m_SplitterFlex: 0.2787194
+  m_SearchText: 
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 8a54297c
+    m_LastClickedID: 2083083402
+    m_ExpandedIDs: 2956c29689577ec10000000001fecd114886f92e
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &28
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13854, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 310, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Project Settings
+    m_Image: {fileID: 866346219090771560, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1447.5
+    y: 30
+    width: 471.5
+    height: 1009
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+  m_PosLeft: {x: 0, y: 0}
+  m_PosRight: {x: 0, y: 0}
+  m_Scope: 1
+  m_SplitterFlex: 0.2787194
+  m_SearchText: 
+  m_TreeViewState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 53336be2
+    m_LastClickedID: -496290989
+    m_ExpandedIDs: 0478ab97a01a5fa653336be2000000007a363d4bc53aba5a
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 0
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+--- !u!114 &29
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12079, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 390, y: 390}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Lighting
+    m_Image: {fileID: -1477008817101679558, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1447.5
+    y: 30
+    width: 471.5
+    height: 1009
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
+--- !u!114 &30
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 12402, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MinSize: {x: 300, y: 150}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_TitleContent:
+    m_Text: Services
+    m_Image: {fileID: 0}
+    m_Tooltip: 
+  m_Pos:
+    serializedVersion: 2
+    x: 1436
+    y: 30
+    width: 483
+    height: 1009
+  m_ViewDataDictionary: {fileID: 0}
+  m_OverlayCanvas:
+    m_LastAppliedPresetName: Default
+    m_SaveData: []
