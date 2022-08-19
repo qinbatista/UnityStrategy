@@ -38,8 +38,9 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/Unit.cs" />
      <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
-     <Compile Include="Assets/Scripts/Controller.cs" />
+     <Compile Include="Assets/Scripts/MouseController.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
+     <Compile Include="Assets/Scripts/UnitActionSystem.cs" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Object.shader" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Global.shader" />
