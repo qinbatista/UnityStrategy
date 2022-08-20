@@ -42,6 +42,8 @@
      <Compile Include="Assets/Scripts/MouseController.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/SelectCircle/SelectCircle.cs" />
+     <Compile Include="Assets/Scripts/GridSystem.cs" />
+     <Compile Include="Assets/Scripts/GridPosition.cs" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Object.shader" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Global.shader" />
