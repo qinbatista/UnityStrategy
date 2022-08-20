@@ -8,10 +8,18 @@ public class Unit : MonoBehaviour
     [SerializeField] Animator animator;
     int runningAnimationID;
     float rotateSpeed = 10f;
+    GridPosition gridPosition;
     void Awake()
     {
         runningAnimationID = Animator.StringToHash("running");
         targetPosition = transform.position;
+    }
+    void Start()
+    {
+        gridPosition = GridManager.Instance.GetGridPosition(transform.position);
+        GridManager.Instance.AddUnitAtGridPosition(gridPosition, this);
+        GridManager.Instance.SetGridText(gridPosition);
+
     }
     void Update()
     {
@@ -26,11 +34,20 @@ public class Unit : MonoBehaviour
         {
             animator.SetBool(runningAnimationID, false);
         }
+        GridPosition newGridPosition = GridManager.Instance.GetGridPosition(transform.position);
+        if(newGridPosition!=gridPosition)
+        {
+            Debug.Log("not equal");
+            GridManager.Instance.UnitMoveGridPosition(this, gridPosition, newGridPosition);
+            gridPosition = newGridPosition;
+        }
 
     }
     public void SetTarget(Vector3 targetPosition)
     {
         // transform.forward = (targetPosition - transform.position).normalized;
+        GridPosition gridPosition = GridManager.Instance.GetGridPosition(transform.position);
+        // GridManager.Instance.SetGridText(gridPosition);
         animator.SetBool(runningAnimationID, true);
         this.targetPosition = targetPosition;
     }

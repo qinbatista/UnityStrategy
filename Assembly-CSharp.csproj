@@ -45,7 +45,8 @@
      <Compile Include="Assets/Scripts/GridSystem/GridSystem.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridPosition.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridObject.cs" />
-     <Compile Include="Assets/Scripts/GridSystem/GridDebugObj.cs" />
+     <Compile Include="Assets/Scripts/GridSystem/GridPositionText.cs" />
+     <Compile Include="Assets/Scripts/GridSystem/GridManager.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

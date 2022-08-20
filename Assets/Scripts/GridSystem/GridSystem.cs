@@ -36,21 +36,26 @@ public class GridSystem
         // Debug.Log("RoundToInt x="+Mathf.RoundToInt(worldPosition.x / cellSize)+" z="+Mathf.RoundToInt(worldPosition.z / cellSize));
         return new GridPosition(Mathf.FloorToInt(worldPosition.x / cellSize), Mathf.FloorToInt(worldPosition.z / cellSize));
     }
-    public void CreateDebugObjects(Transform debugPrefab)
+    public void CreateDebugObjects(Transform PositionTextPrefab)
     {
         for (int x = 0; x < width; x++)
         {
             for (int z = 0; z < height; z++)
             {
-                Transform debugTransform = GameObject.Instantiate(debugPrefab, GetWorldPosition(x, z), Quaternion.identity);
-                GridDebugObj gridDebugObj =  debugTransform.GetComponent<GridDebugObj>();
+                Transform positionTextTransform = GameObject.Instantiate(PositionTextPrefab, GetWorldPosition(x, z), Quaternion.identity);
+                GridPositionText gridDebugObj =  positionTextTransform.GetComponent<GridPositionText>();
                 gridDebugObj.SetGridObject(GetGridObject(new GridPosition(x, z)));
                 gridDebugObj.SetText("(" + x + "," + z + ")");
+                gridObjArray[x, z].SetGridPositionText(gridDebugObj);
             }
         }
     }
     public GridObject GetGridObject(GridPosition gridPosition)
     {
         return gridObjArray[gridPosition.x, gridPosition.z];
+    }
+    public void SetPositionText(GridPosition gridPosition)
+    {
+        gridObjArray[gridPosition.x, gridPosition.z].SetText();
     }
 }
