@@ -5,12 +5,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
-    [SerializeField] Vector2 GridSize;
-    [SerializeField][Range(1, 10)] int CellSize;
+    [SerializeField] Vector2 gridSize;
+    [SerializeField][Range(1, 10)] int cellSize;
+    [SerializeField] Transform gridPrefab;
     GridSystem gridSystem;
     void Start()
     {
-        gridSystem = new GridSystem((int)GridSize.x, (int)GridSize.y, (float)CellSize);
+        gridSystem = new GridSystem((int)gridSize.x, (int)gridSize.y, (float)cellSize);
+        gridSystem.CreateDebugObjects(gridPrefab);
         Debug.Log(new GridPosition(5,5));
     }
 
