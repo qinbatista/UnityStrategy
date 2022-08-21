@@ -32,12 +32,16 @@ public class MoveAction : MonoBehaviour
             animator.SetBool(runningAnimationID, false);
         }
     }
-    public void SetTarget(Vector3 targetPosition)//Move in lecture
+    public void SetTarget(GridPosition targetPosition)//Move in lecture
     {
-        // transform.forward = (targetPosition - transform.position).normalized;
-        GridPosition gridPosition = GridManager.Instance.GetGridPosition(transform.position);
-        // GridManager.Instance.SetGridText(gridPosition);
-        this.targetPosition = targetPosition;
+        this.targetPosition = GridManager.Instance.GetWorldPosition(targetPosition);
+    }
+    public bool IsValidActionGridPosition(GridPosition gridPosition)
+    {
+        List<GridPosition> validGridPositionList = GetValidActionGridPositionList();
+        Debug.Log("1:"+gridPosition);
+        Debug.Log("2:"+validGridPositionList.Contains(gridPosition));
+        return validGridPositionList.Contains(gridPosition);
     }
     public List<GridPosition> GetValidActionGridPositionList()
     {
@@ -48,12 +52,12 @@ public class MoveAction : MonoBehaviour
             for (int z = -MaxMoveDistance; z <= MaxMoveDistance; z++)
             {
                 GridPosition offsetGridPosition = new GridPosition(x, z);
-                GridPosition testGridPosition = unitGridPosition + offsetGridPosition;
+                GridPosition testGridPosition = unitGridPosition  + offsetGridPosition;
+                if(!GridManager.Instance.IsValidGridPosition(testGridPosition)) continue;
+                if(unitGridPosition==testGridPosition)  continue;
+                if (GridManager.Instance.HasAnyUnitOnGridPosition(testGridPosition)) continue;
                 Debug.Log(testGridPosition);
-                // if (gridPosition.GetDistance() <= MaxMoveDistance)
-                // {
-                //     validActionGridPositionList.Add(gridPosition);
-                // }
+                validActionGridPositionList.Add(testGridPosition);
             }
         }
         return validActionGridPositionList;

@@ -32,6 +32,8 @@ public class GridManager : MonoBehaviour
     public List<Unit> GetUnitListAtGridPosition(GridPosition gridPosition) => gridSystem.GetGridObject(gridPosition).GetUnitList();
     public void RemoveUnitAtGridPosition(GridPosition gridPosition, Unit unit) => gridSystem.GetGridObject(gridPosition).RemoveUnit(unit);
     public GridPosition GetGridPosition(Vector3 wordPosition) => gridSystem.GetGridPosition(wordPosition);
+    public Vector3 GetWorldPosition(GridPosition gridPosition) => gridSystem.GetWorldPosition(gridPosition);
+    public bool IsValidGridPosition(GridPosition gridPosition) => gridSystem.IsValidGridPosition(gridPosition);
     public void SetGridText(GridPosition gridPosition) => gridSystem.SetPositionText(gridPosition);
     public void UnitMoveGridPosition(Unit unit, GridPosition fromGridPosition, GridPosition toGridPosition)
     {
@@ -40,4 +42,5 @@ public class GridManager : MonoBehaviour
         SetGridText(fromGridPosition);
         SetGridText(toGridPosition);
     }
+    public bool HasAnyUnitOnGridPosition(GridPosition gridPosition) => gridSystem.GetGridObject(gridPosition).HasAnyUnit();
 }

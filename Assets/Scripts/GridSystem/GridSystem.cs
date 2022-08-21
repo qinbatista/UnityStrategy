@@ -20,21 +20,21 @@ public class GridSystem
         {
             for (int z = 0; z < height; z++)
             {
-                Debug.DrawLine(GetWorldPosition(x, z), GetWorldPosition(x, z) + Vector3.up * 0.2f, Color.white, 100f);
                 GridPosition gridPosition = new GridPosition(x, z);
                 gridObjArray[x, z] = new GridObject(this, gridPosition);
+                Debug.DrawLine(GetWorldPosition(gridPosition), GetWorldPosition(gridPosition) + Vector3.up * 0.2f, Color.white, 100f);
             }
         }
     }
-    public Vector3 GetWorldPosition(int x, int z)
+    public Vector3 GetWorldPosition(GridPosition gridPosition)
     {
-        return new Vector3(x, 0, z) * cellSize;
+        return new Vector3(gridPosition.x, 0, gridPosition.z) * cellSize;
     }
     public GridPosition GetGridPosition(Vector3 worldPosition)
     {
         // Debug.Log("FloorToInt x="+Mathf.FloorToInt(worldPosition.x / cellSize)+" z="+Mathf.FloorToInt(worldPosition.z / cellSize));
         // Debug.Log("RoundToInt x="+Mathf.RoundToInt(worldPosition.x / cellSize)+" z="+Mathf.RoundToInt(worldPosition.z / cellSize));
-        return new GridPosition(Mathf.FloorToInt(worldPosition.x / cellSize), Mathf.FloorToInt(worldPosition.z / cellSize));
+        return new GridPosition(Mathf.RoundToInt(worldPosition.x / cellSize), Mathf.RoundToInt(worldPosition.z / cellSize));
     }
     public void CreateDebugObjects(Transform PositionTextPrefab)
     {
@@ -42,7 +42,7 @@ public class GridSystem
         {
             for (int z = 0; z < height; z++)
             {
-                Transform positionTextTransform = GameObject.Instantiate(PositionTextPrefab, GetWorldPosition(x, z), Quaternion.identity);
+                Transform positionTextTransform = GameObject.Instantiate(PositionTextPrefab, GetWorldPosition(new GridPosition(x,z)), Quaternion.identity);
                 GridPositionText gridDebugObj =  positionTextTransform.GetComponent<GridPositionText>();
                 gridDebugObj.SetGridObject(GetGridObject(new GridPosition(x, z)));
                 gridDebugObj.SetText("(" + x + "," + z + ")");
@@ -53,6 +53,10 @@ public class GridSystem
     public GridObject GetGridObject(GridPosition gridPosition)
     {
         return gridObjArray[gridPosition.x, gridPosition.z];
+    }
+    public bool IsValidGridPosition(GridPosition gridPosition)
+    {
+        return gridPosition.x >= 0 && gridPosition.x < width && gridPosition.z >= 0 && gridPosition.z < height;
     }
     public void SetPositionText(GridPosition gridPosition)
     {
