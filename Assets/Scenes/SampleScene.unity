@@ -911,6 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085982f2069164be984542b1488d6440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 0}
 --- !u!1 &1004202637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1089,6 +1090,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085982f2069164be984542b1488d6440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  virtualCamera: {fileID: 819157687}
 --- !u!4 &1623924218 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9043007923580495687, guid: 5bfae34e01ad94e3eb7b057751ee6d50,
