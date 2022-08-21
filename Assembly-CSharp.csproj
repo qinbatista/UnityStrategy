@@ -38,15 +38,16 @@
   <ItemGroup>
      <Compile Include="Assets/Scripts/Unit/UnitActionSystem.cs" />
      <Compile Include="Assets/Scripts/Unit/Unit.cs" />
-     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
-     <Compile Include="Assets/Scripts/PlayerController/MouseController.cs" />
-     <Compile Include="Assets/Scripts/GameManager.cs" />
-     <Compile Include="Assets/Scripts/Unit/SelectCircle.cs" />
-     <Compile Include="Assets/Scripts/GridSystem/GridSystem.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridPosition.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridObject.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridPositionText.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridManager.cs" />
+     <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
+     <Compile Include="Assets/Scripts/PlayerController/MouseController.cs" />
+     <Compile Include="Assets/Scripts/GridSystem/GridSystem.cs" />
+     <Compile Include="Assets/Scripts/Unit/SelectCircle.cs" />
+     <Compile Include="Assets/Scripts/GameManager.cs" />
+     <Compile Include="Assets/Scripts/PlayerController/CameraController.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
@@ -338,6 +339,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
         <HintPath>/Users/qin/qinProject/Unity3DProject/UnityStrategy/Library/PackageCache/com.unity.nuget.newtonsoft-json@3.0.2/Runtime/Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="clipper_library">
+        <HintPath>/Users/qin/qinProject/Unity3DProject/UnityStrategy/Library/PackageCache/com.unity.cinemachine@2.8.6/Runtime/ThirdParty/clipper_library.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
         <HintPath>/Applications/Unity/Hub/Editor/2022.1.13f1/Unity.app/Contents/NetStandard/ref/2.1.0/netstandard.dll</HintPath>
@@ -812,6 +816,12 @@
     </Reference>
     <Reference Include="Unity.VisualScripting.State">
         <HintPath>/Users/qin/qinProject/Unity3DProject/UnityStrategy/Library/ScriptAssemblies/Unity.VisualScripting.State.dll</HintPath>
+    </Reference>
+    <Reference Include="com.unity.cinemachine.editor">
+        <HintPath>/Users/qin/qinProject/Unity3DProject/UnityStrategy/Library/ScriptAssemblies/com.unity.cinemachine.editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Cinemachine">
+        <HintPath>/Users/qin/qinProject/Unity3DProject/UnityStrategy/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
