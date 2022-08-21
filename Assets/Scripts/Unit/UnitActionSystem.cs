@@ -18,7 +18,7 @@ public class UnitActionSystem : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.T) || Input.GetMouseButtonDown(0))
         {
             if (TryHandleUnit()) return;
-            selectUnit.SetTarget(MouseController.Instance.GetWorldPosition());
+            selectUnit.GetMoveAction().SetTarget(MouseController.Instance.GetWorldPosition());
         }
     }
     bool TryHandleUnit()

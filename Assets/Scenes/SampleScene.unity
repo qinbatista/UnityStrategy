@@ -809,7 +809,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.8602151, y: 1}
+    m_SensorSize: {x: 1.7021506, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -911,7 +911,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 085982f2069164be984542b1488d6440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virtualCamera: {fileID: 0}
+  virtualCamera: {fileID: 819157687}
 --- !u!1 &1004202637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1138,6 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0655f2536c2154c20b2924fbaa5e99cd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  unit: {fileID: 1623924219}
 --- !u!4 &1697817855
 Transform:
   m_ObjectHideFlags: 0
