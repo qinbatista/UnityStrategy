@@ -20,6 +20,12 @@ public class CameraController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        HandleMovement();
+        HandleRotation();
+        HandleZoom();
+    }
+    void HandleMovement()
+    {
         Vector3 inputMoveDir = new Vector3(0, 0, 0);
         if (Input.GetKey(KeyCode.W))
         {
@@ -40,7 +46,9 @@ public class CameraController : MonoBehaviour
         float moveSpeed = 10f;
         Vector3 moveVector = transform.forward * inputMoveDir.z + transform.right * inputMoveDir.x;
         transform.position += moveVector * moveSpeed * Time.deltaTime;
-
+    }
+    void HandleRotation()
+    {
         Vector3 rotationVector = new Vector3(0, 0, 0);
         if (Input.GetKey(KeyCode.Q))
         {
@@ -53,7 +61,9 @@ public class CameraController : MonoBehaviour
         float rotationSpeed = 100f;
         transform.eulerAngles += rotationVector * rotationSpeed * Time.deltaTime;
         // Debug.Log(Input.mouseScrollDelta);
-
+    }
+    void HandleZoom()
+    {
         float zoomAmount = 1f;
         if (Input.mouseScrollDelta.y > 0)
         {
