@@ -8,6 +8,7 @@ public class UnitActionSystem : MonoBehaviour
     [SerializeField] Unit selectUnit;
     [SerializeField] LayerMask unitLayerMask;
     public event Action<Unit> OnSelectUnitEvent;
+    bool isBusy;
     void Awake()
     {
         if(Instance==null)Instance = this;
@@ -15,20 +16,31 @@ public class UnitActionSystem : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.T) || Input.GetMouseButtonDown(0))
+        if(isBusy) return;
+        if (Input.GetMouseButtonDown(0))
         {
             if (TryHandleUnit()) return;
             GridPosition mouseGridPosition = GridManager.Instance.GetGridPosition(MouseController.Instance.GetWorldPosition());
             // Debug.Log("Move:"+mouseGridPosition);
             if(selectUnit.GetMoveAction().IsValidActionGridPosition(mouseGridPosition))
             {
-                selectUnit.GetMoveAction().SetTarget(mouseGridPosition);
+                SetBusy();
+                selectUnit.GetMoveAction().SetTarget(mouseGridPosition,ClearBusy);
             }
         }
         if(Input.GetMouseButtonDown(1))
         {
-            selectUnit.GetSpinAction().Spin();
+            SetBusy();
+            selectUnit.GetSpinAction().Spin(ClearBusy);
         }
+    }
+    private void SetBusy()
+    {
+        isBusy = true;
+    }
+    private void ClearBusy()
+    {
+        isBusy = false;
     }
     bool TryHandleUnit()
     {

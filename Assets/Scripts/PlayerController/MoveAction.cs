@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,10 +32,12 @@ public class MoveAction : BaseAction
         {
             animator.SetBool(runningAnimationID, false);
             isActive = false;
+            onActionComplete();
         }
     }
-    public void SetTarget(GridPosition targetPosition)//Move in lecture
+    public void SetTarget(GridPosition targetPosition, Action onActionComplete)//Move in lecture
     {
+        this.onActionComplete = onActionComplete;
         isActive = true;
         this.targetPosition = GridManager.Instance.GetWorldPosition(targetPosition);
     }
