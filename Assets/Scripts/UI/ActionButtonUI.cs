@@ -10,6 +10,13 @@ public class ActionButtonUI : MonoBehaviour
     public void  SetBaseAction(BaseAction baseAction)
     {
         textMeshProUGUI.text = baseAction.GetActionName().ToLower();
+        button.onClick.AddListener(() => {
+            UnitActionSystem.Instance.SetSelectedAction(baseAction);
+        });
+    }
+    void function()
+    {
+
     }
 
 
