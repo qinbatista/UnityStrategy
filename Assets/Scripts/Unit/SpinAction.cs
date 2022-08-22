@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpinAction : MonoBehaviour
+public class SpinAction : BaseAction
 {
-    bool isActive;
     float totalSpinAmount;
     void Update()
     {

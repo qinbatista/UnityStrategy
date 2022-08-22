@@ -2,20 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveAction : MonoBehaviour
+public class MoveAction : BaseAction
 {
     [SerializeField] Animator animator;
-    Unit unit;
     int runningAnimationID;
     Vector3 targetPosition;
     float moveSpeed = 4f;
     float rotateSpeed = 10f;
     [SerializeField] int MaxMoveDistance = 4;
-    bool isActive;
-    // Start is called before the first frame update
-    void Awake()
+    protected override void Awake()
     {
-        unit = GetComponent<Unit>();
+        base.Awake();
         runningAnimationID = Animator.StringToHash("running");
         targetPosition = transform.position;
     }
