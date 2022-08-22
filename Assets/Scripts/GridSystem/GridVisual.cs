@@ -50,6 +50,7 @@ public class GridVisual : MonoBehaviour
     void UpdateGridVisual()
     {
         HideAllGridPosition();
-        ShowAllGridPosition(UnitActionSystem.Instance.GetSelectedUnit().GetMoveAction().GetValidActionGridPositionList());
+        BaseAction selectedAction = UnitActionSystem.Instance.GetSelectedAction();
+        ShowAllGridPosition(selectedAction.GetValidActionGridPositionList());
     }
 }

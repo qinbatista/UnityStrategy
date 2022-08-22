@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.EventSystems;
 public class UnitActionSystem : MonoBehaviour
 {
     public static UnitActionSystem Instance { get; private set; }
@@ -22,6 +23,7 @@ public class UnitActionSystem : MonoBehaviour
     void Update()
     {
         if (isBusy) return;
+        if(EventSystem.current.IsPointerOverGameObject()) return;
         if (TryHandleUnit()) return;
         HandleSelectedAction();
     }
@@ -41,6 +43,10 @@ public class UnitActionSystem : MonoBehaviour
             {
                 if (hit.transform.TryGetComponent<Unit>(out Unit unit))
                 {
+                    if(unit == selectUnit)
+                    {
+                        return false;
+                    }
                     SetSelectedUnit(unit);
                     return true;
                 }
@@ -53,19 +59,11 @@ public class UnitActionSystem : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GridPosition mouseGridPosition = GridManager.Instance.GetGridPosition(MouseController.Instance.GetWorldPosition());
-            switch (selectedAction)
+            // Debug.Log("aaa mouseGridPosition="+mouseGridPosition);
+            if(selectedAction.IsValidActionGridPosition(mouseGridPosition))
             {
-                case MoveAction moveAction:
-                    if (moveAction.IsValidActionGridPosition(mouseGridPosition))
-                    {
-                        SetBusy();
-                        moveAction.SetTarget(mouseGridPosition, ClearBusy);
-                    }
-                    break;
-                case SpinAction spinAction:
-                    SetBusy();
-                    spinAction.Spin(ClearBusy);
-                    break;
+                SetBusy();
+                selectedAction.TakeAction(mouseGridPosition, ClearBusy);
             }
         }
     }
@@ -81,4 +79,5 @@ public class UnitActionSystem : MonoBehaviour
         OnSelectUnitEvent?.Invoke(unit);
     }
     public Unit GetSelectedUnit() => selectUnit;
+    public BaseAction GetSelectedAction() => selectedAction;
 }

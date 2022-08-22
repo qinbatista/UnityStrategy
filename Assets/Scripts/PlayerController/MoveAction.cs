@@ -35,20 +35,13 @@ public class MoveAction : BaseAction
             onActionComplete();
         }
     }
-    public void SetTarget(GridPosition targetPosition, Action onActionComplete)//Move in lecture
-    {
-        this.onActionComplete = onActionComplete;
-        isActive = true;
-        this.targetPosition = GridManager.Instance.GetWorldPosition(targetPosition);
-    }
-    public bool IsValidActionGridPosition(GridPosition gridPosition)
-    {
-        List<GridPosition> validGridPositionList = GetValidActionGridPositionList();
-        // Debug.Log("1:"+gridPosition);
-        // Debug.Log("2:"+validGridPositionList.Contains(gridPosition));
-        return validGridPositionList.Contains(gridPosition);
-    }
-    public List<GridPosition> GetValidActionGridPositionList()
+    // public void SetTarget(GridPosition targetPosition, Action onActionComplete)//Move in lecture
+    // {
+    //     this.onActionComplete = onActionComplete;
+    //     isActive = true;
+    //     this.targetPosition = GridManager.Instance.GetWorldPosition(targetPosition);
+    // }
+    public override List<GridPosition> GetValidActionGridPositionList()
     {
         List<GridPosition> validActionGridPositionList = new List<GridPosition>();
         GridPosition unitGridPosition = unit.GetGridPosition();
@@ -71,5 +64,12 @@ public class MoveAction : BaseAction
     public override string GetActionName()
     {
         return "Move";
+    }
+
+    public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
+    {
+        this.onActionComplete = onActionComplete;
+        isActive = true;
+        this.targetPosition = GridManager.Instance.GetWorldPosition(gridPosition);
     }
 }
