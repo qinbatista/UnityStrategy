@@ -10,6 +10,7 @@ public class UnitActionSystem : MonoBehaviour
     [SerializeField] LayerMask unitLayerMask;
     public event Action<Unit> OnSelectUnitEvent;
     public event Action<Unit> OnSelectActionEvent;
+    public event Action<bool> OnBusyChangeEvent;
     bool isBusy;
     BaseAction selectedAction;
     void Awake()
@@ -31,10 +32,12 @@ public class UnitActionSystem : MonoBehaviour
     private void SetBusy()
     {
         isBusy = true;
+        OnBusyChangeEvent?.Invoke(isBusy);
     }
     private void ClearBusy()
     {
         isBusy = false;
+        OnBusyChangeEvent?.Invoke(isBusy);
     }
     bool TryHandleUnit()
     {

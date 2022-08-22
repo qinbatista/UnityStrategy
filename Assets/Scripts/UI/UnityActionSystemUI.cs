@@ -13,8 +13,8 @@ public class UnityActionSystemUI : MonoBehaviour
     }
     void Start()
     {
-        UnitActionSystem.Instance.OnSelectUnitEvent+=UnitActionSystem_OnSelectUnitEvent;
-        UnitActionSystem.Instance.OnSelectActionEvent+=UnitActionSystem_OnSelectActionEvent;
+        UnitActionSystem.Instance.OnSelectUnitEvent += UnitActionSystem_OnSelectUnitEvent;
+        UnitActionSystem.Instance.OnSelectActionEvent += UnitActionSystem_OnSelectActionEvent;
         CreateUnitActionButtons();
         UpdateSelectedVisual();
     }
@@ -29,7 +29,7 @@ public class UnityActionSystemUI : MonoBehaviour
 
         foreach (BaseAction item in selectUnit.GetBaseActionArray())
         {
-            Transform actionButtonTransform = Instantiate(actionButtonPrefab,actionButtonContainerTransform);
+            Transform actionButtonTransform = Instantiate(actionButtonPrefab, actionButtonContainerTransform);
             ActionButtonUI actionButtonUI = actionButtonTransform.GetComponent<ActionButtonUI>();
             actionButtonUI.SetBaseAction(item);
             actionButtonUIList.Add(actionButtonUI);
