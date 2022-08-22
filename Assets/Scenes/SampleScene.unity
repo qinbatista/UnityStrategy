@@ -990,7 +990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridSize: {x: 20, y: 20}
-  cellSize: 1
+  cellSize: 2
   gridPrefab: {fileID: 1757846277192910434, guid: 7ea13fec569c44c3bb1c5834b0c5d649,
     type: 3}
 --- !u!4 &1123140873

@@ -12,7 +12,8 @@ public class GameManager : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.G))
         {
-            unit.GetMoveAction().GetValidActionGridPositionList();
+            GridVisual.Instance.HideAllGridPosition();
+            GridVisual.Instance.ShowAllGridPosition(unit.GetMoveAction().GetValidActionGridPositionList());
         }
     }
 }

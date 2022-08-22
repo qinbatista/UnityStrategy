@@ -62,4 +62,12 @@ public class GridSystem
     {
         gridObjArray[gridPosition.x, gridPosition.z].SetText();
     }
+    public int GetWidth()
+    {
+        return width;
+    }
+    public int GetHeight()
+    {
+        return height;
+    }
 }

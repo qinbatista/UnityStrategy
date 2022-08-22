@@ -18,7 +18,7 @@ public class GridManager : MonoBehaviour
     }
     void Start()
     {
-        Debug.Log(new GridPosition(5, 5));
+        // Debug.Log(new GridPosition(5, 5));
     }
 
     void Update()
@@ -43,4 +43,6 @@ public class GridManager : MonoBehaviour
         SetGridText(toGridPosition);
     }
     public bool HasAnyUnitOnGridPosition(GridPosition gridPosition) => gridSystem.GetGridObject(gridPosition).HasAnyUnit();
+    public int GetWidth() => gridSystem.GetWidth();
+    public int GetHeight() => gridSystem.GetHeight();
 }

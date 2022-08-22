@@ -39,8 +39,8 @@ public class MoveAction : MonoBehaviour
     public bool IsValidActionGridPosition(GridPosition gridPosition)
     {
         List<GridPosition> validGridPositionList = GetValidActionGridPositionList();
-        Debug.Log("1:"+gridPosition);
-        Debug.Log("2:"+validGridPositionList.Contains(gridPosition));
+        // Debug.Log("1:"+gridPosition);
+        // Debug.Log("2:"+validGridPositionList.Contains(gridPosition));
         return validGridPositionList.Contains(gridPosition);
     }
     public List<GridPosition> GetValidActionGridPositionList()
@@ -56,7 +56,7 @@ public class MoveAction : MonoBehaviour
                 if(!GridManager.Instance.IsValidGridPosition(testGridPosition)) continue;
                 if(unitGridPosition==testGridPosition)  continue;
                 if (GridManager.Instance.HasAnyUnitOnGridPosition(testGridPosition)) continue;
-                Debug.Log(testGridPosition);
+                // Debug.Log(testGridPosition);
                 validActionGridPositionList.Add(testGridPosition);
             }
         }
