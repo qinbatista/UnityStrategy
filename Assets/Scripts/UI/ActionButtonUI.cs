@@ -5,18 +5,23 @@ using UnityEngine.UI;
 using TMPro;
 public class ActionButtonUI : MonoBehaviour
 {
-    [SerializeField]TextMeshProUGUI textMeshProUGUI;
-    [SerializeField]Button button;
-    public void  SetBaseAction(BaseAction baseAction)
+    [SerializeField] TextMeshProUGUI textMeshProUGUI;
+    [SerializeField] Button button;
+    [SerializeField] GameObject selectedObject;
+    BaseAction baseAction;
+    public void SetBaseAction(BaseAction baseAction)
     {
+        this.baseAction = baseAction;
         textMeshProUGUI.text = baseAction.GetActionName().ToLower();
-        button.onClick.AddListener(() => {
+        button.onClick.AddListener(() =>
+        {
             UnitActionSystem.Instance.SetSelectedAction(baseAction);
         });
     }
-    void function()
+    public void UpdateSelectedVisual()
     {
-
+        BaseAction selectedBaseAction = UnitActionSystem.Instance.GetSelectedAction();
+        selectedObject.SetActive(selectedBaseAction == baseAction);
     }
 
 

@@ -9,6 +9,7 @@ public class UnitActionSystem : MonoBehaviour
     [SerializeField] Unit selectUnit;
     [SerializeField] LayerMask unitLayerMask;
     public event Action<Unit> OnSelectUnitEvent;
+    public event Action<Unit> OnSelectActionEvent;
     bool isBusy;
     BaseAction selectedAction;
     void Awake()
@@ -71,6 +72,7 @@ public class UnitActionSystem : MonoBehaviour
     public void SetSelectedAction(BaseAction baseAction)
     {
         selectedAction = baseAction;
+        OnSelectActionEvent?.Invoke(selectUnit);
     }
     void SetSelectedUnit(Unit unit)
     {
@@ -80,4 +82,5 @@ public class UnitActionSystem : MonoBehaviour
     }
     public Unit GetSelectedUnit() => selectUnit;
     public BaseAction GetSelectedAction() => selectedAction;
+
 }
