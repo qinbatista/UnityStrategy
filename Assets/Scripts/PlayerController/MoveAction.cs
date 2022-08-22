@@ -11,6 +11,7 @@ public class MoveAction : MonoBehaviour
     float moveSpeed = 4f;
     float rotateSpeed = 10f;
     [SerializeField] int MaxMoveDistance = 4;
+    bool isActive;
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,19 +22,23 @@ public class MoveAction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (!isActive) return;
         if (transform.position != targetPosition)
         {
+            Vector3 moveDirection = (targetPosition - transform.position).normalized;
             animator.SetBool(runningAnimationID, true);
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-            transform.forward = Vector3.Lerp(transform.forward, (targetPosition - transform.position).normalized, rotateSpeed * Time.deltaTime);
+            transform.forward = Vector3.Lerp(transform.forward, moveDirection, rotateSpeed * Time.deltaTime);
         }
         else
         {
             animator.SetBool(runningAnimationID, false);
+            isActive = false;
         }
     }
     public void SetTarget(GridPosition targetPosition)//Move in lecture
     {
+        isActive = true;
         this.targetPosition = GridManager.Instance.GetWorldPosition(targetPosition);
     }
     public bool IsValidActionGridPosition(GridPosition gridPosition)
@@ -52,9 +57,9 @@ public class MoveAction : MonoBehaviour
             for (int z = -MaxMoveDistance; z <= MaxMoveDistance; z++)
             {
                 GridPosition offsetGridPosition = new GridPosition(x, z);
-                GridPosition testGridPosition = unitGridPosition  + offsetGridPosition;
-                if(!GridManager.Instance.IsValidGridPosition(testGridPosition)) continue;
-                if(unitGridPosition==testGridPosition)  continue;
+                GridPosition testGridPosition = unitGridPosition + offsetGridPosition;
+                if (!GridManager.Instance.IsValidGridPosition(testGridPosition)) continue;
+                if (unitGridPosition == testGridPosition) continue;
                 if (GridManager.Instance.HasAnyUnitOnGridPosition(testGridPosition)) continue;
                 // Debug.Log(testGridPosition);
                 validActionGridPositionList.Add(testGridPosition);

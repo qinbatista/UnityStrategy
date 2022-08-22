@@ -6,14 +6,17 @@ public class Unit : MonoBehaviour
 {
     GridPosition gridPosition;
     MoveAction moveAction;
-
+    SpinAction spinAction;
+    void Awake()
+    {
+        moveAction = GetComponent<MoveAction>();
+        spinAction = GetComponent<SpinAction>();
+    }
     void Start()
     {
         gridPosition = GridManager.Instance.GetGridPosition(transform.position);
         GridManager.Instance.AddUnitAtGridPosition(gridPosition, this);
         GridManager.Instance.SetGridText(gridPosition);
-        moveAction = GetComponent<MoveAction>();
-
     }
     void Update()
     {
@@ -28,6 +31,10 @@ public class Unit : MonoBehaviour
     public MoveAction GetMoveAction()
     {
         return moveAction;
+    }
+    public SpinAction GetSpinAction()
+    {
+        return spinAction;
     }
     public GridPosition GetGridPosition()
     {
