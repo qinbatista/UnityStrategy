@@ -25,7 +25,7 @@ public class Unit : MonoBehaviour
         gridPosition = GridManager.Instance.GetGridPosition(transform.position);
         GridManager.Instance.AddUnitAtGridPosition(gridPosition, this);
         GridManager.Instance.SetGridText(gridPosition);
-        TurnSystem.Instance.TurnChanged += TurnSystem_OnTurnChanged;
+        TurnSystem.Instance.onTurnChanged += TurnSystem_OnTurnChanged;
     }
     void Update()
     {
