@@ -32,7 +32,7 @@ public class Unit : MonoBehaviour
         GridPosition newGridPosition = GridManager.Instance.GetGridPosition(transform.position);
         if (newGridPosition != gridPosition)
         {
-            Debug.Log("not equal");
+            // Debug.Log("not equal");
             GridManager.Instance.UnitMoveGridPosition(this, gridPosition, newGridPosition);
             gridPosition = newGridPosition;
         }
@@ -48,6 +48,10 @@ public class Unit : MonoBehaviour
     public GridPosition GetGridPosition()
     {
         return gridPosition;
+    }
+    public Vector3 GetWorldPosition()
+    {
+        return transform.position;
     }
     public BaseAction[] GetBaseActionArray()
     {
@@ -92,6 +96,11 @@ public class Unit : MonoBehaviour
     {
         // Debug.Log(this.name+" "+isEnemy);
         return isEnemy;
+    }
+    public void Damage()
+    {
+        Debug.Log(transform+"damaged!");
+        // Destroy(gameObject);
     }
 
 

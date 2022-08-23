@@ -31,8 +31,7 @@ public class MoveAction : BaseAction
         else
         {
             animator.SetBool(runningAnimationID, false);
-            isActive = false;
-            onActionComplete();
+            ActionComplete();
         }
     }
     // public void SetTarget(GridPosition targetPosition, Action onActionComplete)//Move in lecture
@@ -68,8 +67,7 @@ public class MoveAction : BaseAction
 
     public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
     {
-        this.onActionComplete = onActionComplete;
-        isActive = true;
+        ActionStart(onActionComplete);
         this.targetPosition = GridManager.Instance.GetWorldPosition(gridPosition);
     }
 }
