@@ -12,11 +12,13 @@ public class Unit : MonoBehaviour
     int actionPoint = ACTION_POINT_MAX;
     const int ACTION_POINT_MAX = 3;
     public static event Action OnAnyPointsChanged;
+    [SerializeField] public bool isEnemy = false;
     void Awake()
     {
         moveAction = GetComponent<MoveAction>();
         spinAction = GetComponent<SpinAction>();
-        baseActionArray= GetComponents<BaseAction>();
+        baseActionArray = GetComponents<BaseAction>();
+        // Debug.Log(this.name+" "+isEnemy);
     }
     void Start()
     {
@@ -28,7 +30,7 @@ public class Unit : MonoBehaviour
     void Update()
     {
         GridPosition newGridPosition = GridManager.Instance.GetGridPosition(transform.position);
-        if(newGridPosition!=gridPosition)
+        if (newGridPosition != gridPosition)
         {
             Debug.Log("not equal");
             GridManager.Instance.UnitMoveGridPosition(this, gridPosition, newGridPosition);
@@ -53,7 +55,7 @@ public class Unit : MonoBehaviour
     }
     public bool CanSpeedActionPoint(BaseAction baseAction)
     {
-        if(actionPoint>=baseAction.GetActionPointCost())
+        if (actionPoint >= baseAction.GetActionPointCost())
         {
             return true;
         }
@@ -66,7 +68,7 @@ public class Unit : MonoBehaviour
     }
     public bool TrySpeedActionPoints(BaseAction baseAction)
     {
-        if(CanSpeedActionPoint(baseAction))
+        if (CanSpeedActionPoint(baseAction))
         {
             SpendActionPoint(baseAction.GetActionPointCost());
             return true;
@@ -79,8 +81,17 @@ public class Unit : MonoBehaviour
     }
     void TurnSystem_OnTurnChanged()
     {
-        actionPoint = ACTION_POINT_MAX;
-        OnAnyPointsChanged?.Invoke();
+        if ((IsEnemy() && !TurnSystem.Instance.IsPlayerTurn()) || (!IsEnemy() && TurnSystem.Instance.IsPlayerTurn()))
+        {
+            actionPoint = ACTION_POINT_MAX;
+            OnAnyPointsChanged?.Invoke();
+            Debug.Log("Player Turn");
+        }
+    }
+    public bool IsEnemy()
+    {
+        // Debug.Log(this.name+" "+isEnemy);
+        return isEnemy;
     }
 
 

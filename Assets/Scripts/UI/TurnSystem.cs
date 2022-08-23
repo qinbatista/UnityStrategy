@@ -5,9 +5,10 @@ using UnityEngine;
 
 public class TurnSystem : MonoBehaviour
 {
-    int turnNumber =1 ;
+    int turnNumber = 1;
     public static TurnSystem Instance { get; private set; }
     public event Action TurnChanged;
+    bool isPlayerTurn = true;
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -16,11 +17,15 @@ public class TurnSystem : MonoBehaviour
     public void NextTurn()
     {
         turnNumber++;
+        isPlayerTurn = !isPlayerTurn;
         TurnChanged?.Invoke();
     }
     public int GetTurnNumber()
     {
         return turnNumber;
     }
-
+    public bool IsPlayerTurn()
+    {
+        return isPlayerTurn;
+    }
 }

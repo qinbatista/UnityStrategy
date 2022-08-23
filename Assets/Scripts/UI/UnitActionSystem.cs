@@ -27,6 +27,7 @@ public class UnitActionSystem : MonoBehaviour
     {
         if (isBusy) return;
         if(EventSystem.current.IsPointerOverGameObject()) return;
+        if(!TurnSystem.Instance.IsPlayerTurn()) return;
         if (TryHandleUnit()) return;
         HandleSelectedAction();
     }
@@ -48,7 +49,12 @@ public class UnitActionSystem : MonoBehaviour
             {
                 if (hit.transform.TryGetComponent<Unit>(out Unit unit))
                 {
+                    // Debug.Log("selectUnit.IsEnemy()=" +unit.IsEnemy()+" hit="+unit.transform.name+" selectUnit="+unit.isEnemy);
                     if(unit == selectUnit)
+                    {
+                        return false;
+                    }
+                    if(unit.IsEnemy())
                     {
                         return false;
                     }
