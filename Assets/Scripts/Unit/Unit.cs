@@ -1,4 +1,5 @@
 
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -8,6 +9,9 @@ public class Unit : MonoBehaviour
     MoveAction moveAction;
     SpinAction spinAction;
     BaseAction[] baseActionArray;
+    int actionPoint = ACTION_POINT_MAX;
+    const int ACTION_POINT_MAX = 3;
+    public static event Action OnAnyPointsChanged;
     void Awake()
     {
         moveAction = GetComponent<MoveAction>();
@@ -19,6 +23,7 @@ public class Unit : MonoBehaviour
         gridPosition = GridManager.Instance.GetGridPosition(transform.position);
         GridManager.Instance.AddUnitAtGridPosition(gridPosition, this);
         GridManager.Instance.SetGridText(gridPosition);
+        TurnSystem.Instance.TurnChanged += TurnSystem_OnTurnChanged;
     }
     void Update()
     {
@@ -46,5 +51,37 @@ public class Unit : MonoBehaviour
     {
         return baseActionArray;
     }
+    public bool CanSpeedActionPoint(BaseAction baseAction)
+    {
+        if(actionPoint>=baseAction.GetActionPointCost())
+        {
+            return true;
+        }
+        return false;
+    }
+    void SpendActionPoint(int amount)
+    {
+        actionPoint -= amount;
+        OnAnyPointsChanged?.Invoke();
+    }
+    public bool TrySpeedActionPoints(BaseAction baseAction)
+    {
+        if(CanSpeedActionPoint(baseAction))
+        {
+            SpendActionPoint(baseAction.GetActionPointCost());
+            return true;
+        }
+        return false;
+    }
+    public int GetActionPoint()
+    {
+        return actionPoint;
+    }
+    void TurnSystem_OnTurnChanged()
+    {
+        actionPoint = ACTION_POINT_MAX;
+        OnAnyPointsChanged?.Invoke();
+    }
+
 
 }

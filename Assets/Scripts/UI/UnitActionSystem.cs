@@ -11,6 +11,7 @@ public class UnitActionSystem : MonoBehaviour
     public event Action<Unit> OnSelectUnitEvent;
     public event Action<Unit> OnSelectActionEvent;
     public event Action<bool> OnBusyChangeEvent;
+    public event Action OnActionStartEvent;
     bool isBusy;
     BaseAction selectedAction;
     void Awake()
@@ -63,12 +64,19 @@ public class UnitActionSystem : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             GridPosition mouseGridPosition = GridManager.Instance.GetGridPosition(MouseController.Instance.GetWorldPosition());
-            // Debug.Log("aaa mouseGridPosition="+mouseGridPosition);
-            if(selectedAction.IsValidActionGridPosition(mouseGridPosition))
+            if(!selectedAction.IsValidActionGridPosition(mouseGridPosition))
             {
-                SetBusy();
-                selectedAction.TakeAction(mouseGridPosition, ClearBusy);
+                // Debug.Log("CanSpeedActionPoint return");
+                return;
             }
+            if(!selectUnit.TrySpeedActionPoints(selectedAction))
+            {
+                // Debug.Log("TrySpeedActionPoints return");
+                return;
+            }
+            SetBusy();
+            selectedAction.TakeAction(mouseGridPosition, ClearBusy);
+            OnActionStartEvent?.Invoke();
         }
     }
 
