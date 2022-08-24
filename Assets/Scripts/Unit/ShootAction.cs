@@ -101,18 +101,22 @@ public class ShootAction : BaseAction
 
     public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
     {
-        ActionStart(onActionComplete);
         targetUnit = GridManager.Instance.GetUnitGridPosition(gridPosition);
         // Debug.Log("Aiming");
         state = State.Aiming;
         float aimingStateTime = 1f;
         stateTimer = aimingStateTime;
         canShootBullet = true;
+        ActionStart(onActionComplete);
     }
     void Shoot()
     {
         OnStartShooting?.Invoke(new OnShootEventArgs { targetUnit = targetUnit, shootingUnit = unit });
         targetUnit.Damage(50);
+    }
+    public Unit GetTarget()
+    {
+        return targetUnit;
     }
 
 }
