@@ -4,8 +4,14 @@ using UnityEngine;
 using System;
 public class HealthSystem : MonoBehaviour
 {
-    int health = 100;
+    [SerializeField]int health = 100;
+    int healthMax;
     public event Action OnDie;
+    public event Action Damaged;
+    void Awake()
+    {
+        healthMax = health;
+    }
     public void Damage(int damageAmount)
     {
         health -= damageAmount;
@@ -13,6 +19,7 @@ public class HealthSystem : MonoBehaviour
         {
             health = 0;
         }
+        Damaged?.Invoke();
         if (health == 0)
         {
             Die();
@@ -24,5 +31,9 @@ public class HealthSystem : MonoBehaviour
     {
         OnDie?.Invoke();
         Destroy(gameObject);
+    }
+    public float GetHealthNormalized()
+    {
+        return (float)health/healthMax;
     }
 }

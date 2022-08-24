@@ -36,10 +36,14 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets/Scripts/UI/UnitUI.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridVisual.cs" />
      <Compile Include="Assets/Scripts/UI/UnityActionSystemUI.cs" />
      <Compile Include="Assets/Scripts/UI/UnitActionSystem.cs" />
      <Compile Include="Assets/Scripts/Unit/Unit.cs" />
+     <Compile Include="Assets/Scripts/Unit/UnitRagdollSpawner.cs" />
+     <Compile Include="Assets/Scripts/Unit/BulletProjectile.cs" />
+     <Compile Include="Assets/Scripts/Unit/UnitAnimator.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridPosition.cs" />
      <Compile Include="Assets/Scripts/Controller/CameraController.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridObject.cs" />
@@ -47,7 +51,9 @@
      <Compile Include="Assets/Scripts/UI/ActionButtonUI.cs" />
      <Compile Include="Assets/Scripts/Unit/MoveAction.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridPositionText.cs" />
+     <Compile Include="Assets/Scripts/Controller/EnemyAI.cs" />
      <Compile Include="Assets/Scripts/UI/TurnSystemUI.cs" />
+     <Compile Include="Assets/Scripts/Unit/LookAtCamera.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridManager.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridVisualSingle.cs" />
      <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
@@ -55,16 +61,12 @@
      <Compile Include="Assets/Scripts/Unit/SpinAction.cs" />
      <Compile Include="Assets/Scripts/UI/TurnSystem.cs" />
      <Compile Include="Assets/Scripts/Controller/MouseController.cs" />
+     <Compile Include="Assets/Scripts/Unit/HealthSystem.cs" />
+     <Compile Include="Assets/Scripts/Unit/UnitRagdoll.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridSystem.cs" />
      <Compile Include="Assets/Scripts/Unit/SelectCircle.cs" />
-     <Compile Include="Assets/Scripts/GameManager.cs" />
-     <Compile Include="Assets/Scripts/Controller/EnemyAI.cs" />
      <Compile Include="Assets/Scripts/Unit/ShootAction.cs" />
-     <Compile Include="Assets/Scripts/Unit/UnitAnimator.cs" />
-     <Compile Include="Assets/Scripts/Unit/BulletProjectile.cs" />
-     <Compile Include="Assets/Scripts/Unit/HealthSystem.cs" />
-     <Compile Include="Assets/Scripts/Unit/UnitRagdollSpawner.cs" />
-     <Compile Include="Assets/Scripts/Unit/UnitRagdoll.cs" />
+     <Compile Include="Assets/Scripts/GameManager.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />
