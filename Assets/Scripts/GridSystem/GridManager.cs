@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class GridManager : MonoBehaviour
 {
     public static GridManager Instance { get; private set; }
+    public event Action OnAnyUnitMovedGridPosition;
     [SerializeField] Vector2 gridSize;
     [SerializeField][Range(1, 10)] int cellSize;
     [SerializeField] Transform gridPrefab;
@@ -41,6 +42,7 @@ public class GridManager : MonoBehaviour
         AddUnitAtGridPosition(toGridPosition, unit);
         SetGridText(fromGridPosition);
         SetGridText(toGridPosition);
+        OnAnyUnitMovedGridPosition?.Invoke();
     }
     public bool HasAnyUnitOnGridPosition(GridPosition gridPosition) => gridSystem.GetGridObject(gridPosition).HasAnyUnit();
     public int GetWidth() => gridSystem.GetWidth();

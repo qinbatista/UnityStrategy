@@ -6,8 +6,9 @@ public class GridVisualSingle : MonoBehaviour
 {
     [SerializeField] MeshRenderer meshRenderer;
     // Start is called before the first frame update
-    public void Show()
+    public void Show(Material material)
     {
+        meshRenderer.material = material;
         meshRenderer.enabled = true;
     }
     public void Hide()

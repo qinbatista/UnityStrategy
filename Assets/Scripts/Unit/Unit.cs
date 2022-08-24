@@ -35,9 +35,10 @@ public class Unit : MonoBehaviour
         GridPosition newGridPosition = GridManager.Instance.GetGridPosition(transform.position);
         if (newGridPosition != gridPosition)
         {
+            GridPosition oldGridPosition = gridPosition;
             // Debug.Log("not equal");
-            GridManager.Instance.UnitMoveGridPosition(this, gridPosition, newGridPosition);
             gridPosition = newGridPosition;
+            GridManager.Instance.UnitMoveGridPosition(this, oldGridPosition, newGridPosition);
         }
     }
     public MoveAction GetMoveAction()
