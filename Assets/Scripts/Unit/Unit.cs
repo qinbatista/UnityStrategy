@@ -110,6 +110,7 @@ public class Unit : MonoBehaviour
     void HealthSystem_OnDie()
     {
         GridManager.Instance.RemoveUnitAtGridPosition(gridPosition, this);
+        // Debug.Log("a");
         Destroy(gameObject);
     }
 }

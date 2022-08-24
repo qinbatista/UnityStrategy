@@ -17,12 +17,12 @@ public class HealthSystem : MonoBehaviour
         {
             Die();
         }
-        Debug.Log(health);
+        // Debug.Log(health);
     }
 
     void Die()
     {
-        Destroy(gameObject);
         OnDie?.Invoke();
+        Destroy(gameObject);
     }
 }
