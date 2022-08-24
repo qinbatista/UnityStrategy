@@ -85,20 +85,61 @@ public class EnemyAI : MonoBehaviour
     }
     bool TryTakeEnemyAIAction(Unit enemyUnit, Action onEnemyAIActionComplete)
     {
-        SpinAction spinAction = enemyUnit.GetSpinAction();
-        GridPosition actionGridPosition = enemyUnit.GetGridPosition();
-        if (!spinAction.IsValidActionGridPosition(actionGridPosition))
+        EnemyAIAction bestEnemyAIAction = null;
+        BaseAction bestBaseAction = null;
+        foreach (BaseAction baseAction in enemyUnit.GetBaseActionArray())
         {
-            // Debug.Log("CanSpeedActionPoint return");
-            return false;
+            if (!enemyUnit.CanSpeedActionPoint(baseAction))
+            {
+                continue;
+            }
+            if(bestEnemyAIAction==null)
+            {
+                bestEnemyAIAction = baseAction.GetBestEnemyAIAction();
+                bestBaseAction = baseAction;
+            }
+            else
+            {
+                EnemyAIAction BestEnemyAIAction = baseAction.GetBestEnemyAIAction();
+                if(BestEnemyAIAction!=null)
+                {
+                    bestEnemyAIAction = baseAction.GetBestEnemyAIAction();
+                    bestBaseAction = baseAction;
+                }
+                else
+                {
+                    EnemyAIAction testEnemyAIAction = baseAction.GetBestEnemyAIAction();
+                    if(testEnemyAIAction!=null && testEnemyAIAction.actionValue>bestEnemyAIAction.actionValue)
+                    {
+                        bestEnemyAIAction = testEnemyAIAction;
+                        bestBaseAction = baseAction;
+                    }
+                }
+            }
         }
-        if (!enemyUnit.TrySpeedActionPoints(spinAction))
+        if(bestEnemyAIAction!=null && enemyUnit.TrySpeedActionPoints(bestBaseAction))
         {
-            // Debug.Log("TrySpeedActionPoints return");
-            return false;
+            bestBaseAction.TakeAction(bestEnemyAIAction.gridPosition, onEnemyAIActionComplete);
+            return true;
         }
-        // SetBusy();
-        spinAction.TakeAction(actionGridPosition, onEnemyAIActionComplete);
-        return true;
+        else
+        {
+                return false;
+        }
+        // SpinAction spinAction = enemyUnit.GetSpinAction();
+        // GridPosition actionGridPosition = enemyUnit.GetGridPosition();
+        // if (!spinAction.IsValidActionGridPosition(actionGridPosition))
+        // {
+        //     // Debug.Log("CanSpeedActionPoint return");
+        //     return false;
+        // }
+        // if (!enemyUnit.TrySpeedActionPoints(spinAction))
+        // {
+        //     // Debug.Log("TrySpeedActionPoints return");
+        //     return false;
+        // }
+        // // SetBusy();
+        // spinAction.TakeAction(actionGridPosition, onEnemyAIActionComplete);
+        // return true;
     }
 }

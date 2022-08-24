@@ -74,4 +74,14 @@ public class MoveAction : BaseAction
         OnStartMoving?.Invoke();
         ActionStart(onActionComplete);
     }
+
+    public override EnemyAIAction GetEnemyAIAction(GridPosition gridPosition)
+    {
+        int targetCountAtGidPosition = unit.GetShootAction().GetTargetCountAtPosition(gridPosition);
+        return new EnemyAIAction
+        {
+            gridPosition = gridPosition,
+            actionValue = targetCountAtGidPosition*10,
+        };
+    }
 }

@@ -8,6 +8,7 @@ public class Unit : MonoBehaviour
     GridPosition gridPosition;
     MoveAction moveAction;
     SpinAction spinAction;
+    ShootAction shootAction;
     BaseAction[] baseActionArray;
     int actionPoint = ACTION_POINT_MAX;
     const int ACTION_POINT_MAX = 3;
@@ -20,6 +21,7 @@ public class Unit : MonoBehaviour
     {
         moveAction = GetComponent<MoveAction>();
         spinAction = GetComponent<SpinAction>();
+        shootAction = GetComponent<ShootAction>();
         baseActionArray = GetComponents<BaseAction>();
         healthSystem = GetComponent<HealthSystem>();
         // Debug.Log(this.name+" "+isEnemy);
@@ -47,6 +49,10 @@ public class Unit : MonoBehaviour
     public MoveAction GetMoveAction()
     {
         return moveAction;
+    }
+    public ShootAction GetShootAction()
+    {
+        return shootAction;
     }
     public SpinAction GetSpinAction()
     {
@@ -117,5 +123,9 @@ public class Unit : MonoBehaviour
         // Debug.Log("a");
         Destroy(gameObject);
         OnAnyUnitDead?.Invoke(this);
+    }
+    public float GetHealthNormalized()
+    {
+        return healthSystem.GetHealthNormalized();
     }
 }
