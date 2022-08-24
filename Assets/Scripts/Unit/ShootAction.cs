@@ -16,6 +16,13 @@ public class ShootAction : BaseAction
     int maxShootDistance = 7;
     Unit targetUnit;
     bool canShootBullet = true;
+    public event Action<OnShootEventArgs> OnStartShooting;
+    public class OnShootEventArgs : EventArgs
+    {
+        public Unit targetUnit;
+        public Unit shootingUnit;
+    }
+    // public event Action OnStopShooting;
     public override string GetActionName()
     {
         return "Shoot";
@@ -104,6 +111,7 @@ public class ShootAction : BaseAction
     }
     void Shoot()
     {
+        OnStartShooting?.Invoke(new OnShootEventArgs { targetUnit = targetUnit, shootingUnit = unit });
         targetUnit.Damage();
     }
 

@@ -762,7 +762,7 @@ Transform:
   m_GameObject: {fileID: 316616131}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 30, y: 1, z: 30}
+  m_LocalScale: {x: 20, y: 1, z: 20}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1569197570}
@@ -1734,7 +1734,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.1585536, y: 1}
+    m_SensorSize: {x: 2.9449716, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -3068,11 +3068,6 @@ PrefabInstance:
     serializedVersion: 2
     m_TransformParent: {fileID: 1569197570}
     m_Modifications:
-    - target: {fileID: 5030065182856763995, guid: 5bfae34e01ad94e3eb7b057751ee6d50,
-        type: 3}
-      propertyPath: MaxMoveDistance
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9043007923580495684, guid: 5bfae34e01ad94e3eb7b057751ee6d50,
         type: 3}
       propertyPath: m_Name

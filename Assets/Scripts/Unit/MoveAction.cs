@@ -5,16 +5,18 @@ using UnityEngine;
 
 public class MoveAction : BaseAction
 {
-    [SerializeField] Animator animator;
+    // [SerializeField] Animator animator;
     int runningAnimationID;
     Vector3 targetPosition;
     float moveSpeed = 4f;
     float rotateSpeed = 10f;
     [SerializeField] int MaxMoveDistance = 4;
+    public event Action OnStartMoving;
+    public event Action OnStopMoving;
     protected override void Awake()
     {
         base.Awake();
-        runningAnimationID = Animator.StringToHash("running");
+        // runningAnimationID = Animator.StringToHash("running");
         targetPosition = transform.position;
     }
     // Update is called once per frame
@@ -24,13 +26,14 @@ public class MoveAction : BaseAction
         if (transform.position != targetPosition)
         {
             Vector3 moveDirection = (targetPosition - transform.position).normalized;
-            animator.SetBool(runningAnimationID, true);
+            // animator.SetBool(runningAnimationID, true);
             transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
             transform.forward = Vector3.Lerp(transform.forward, moveDirection, rotateSpeed * Time.deltaTime);
         }
         else
         {
-            animator.SetBool(runningAnimationID, false);
+            OnStopMoving?.Invoke();
+            // animator.SetBool(runningAnimationID, false);
             ActionComplete();
         }
     }
@@ -69,5 +72,6 @@ public class MoveAction : BaseAction
     {
         ActionStart(onActionComplete);
         this.targetPosition = GridManager.Instance.GetWorldPosition(gridPosition);
+        OnStartMoving?.Invoke();
     }
 }
