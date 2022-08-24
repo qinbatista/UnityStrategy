@@ -56,7 +56,6 @@ public class GridVisual : MonoBehaviour
     }
     public void ShowAllGridPosition(List<GridPosition> gridPositionList, GridVisualType gridVisualType)
     {
-        Debug.Log("a:"+GridVisualSingleArray.Length.ToString());
         foreach (GridPosition gridPosition in gridPositionList)
         {
             GridVisualSingleArray[gridPosition.x, gridPosition.z].Show(GetGridVisualTypeMaterial(gridVisualType));

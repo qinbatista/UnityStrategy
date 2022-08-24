@@ -68,6 +68,7 @@
      <Compile Include="Assets/Scripts/Unit/ShootAction.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
      <Compile Include="Assets/Scripts/Controller/CameraManager.cs" />
+     <Compile Include="Assets/Scripts/Unit/UnitManger.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

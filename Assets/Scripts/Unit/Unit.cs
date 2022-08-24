@@ -12,6 +12,8 @@ public class Unit : MonoBehaviour
     int actionPoint = ACTION_POINT_MAX;
     const int ACTION_POINT_MAX = 3;
     public static event Action OnAnyPointsChanged;
+    public static event Action<Unit> OnAnyUnitSpawned;
+    public static event Action<Unit> OnAnyUnitDead;
     HealthSystem healthSystem;
     [SerializeField] public bool isEnemy = false;
     void Awake()
@@ -29,6 +31,7 @@ public class Unit : MonoBehaviour
         GridManager.Instance.SetGridText(gridPosition);
         TurnSystem.Instance.onTurnChanged += TurnSystem_OnTurnChanged;
         healthSystem.OnDie += HealthSystem_OnDie;
+        OnAnyUnitSpawned?.Invoke(this);
     }
     void Update()
     {
@@ -93,7 +96,7 @@ public class Unit : MonoBehaviour
         {
             actionPoint = ACTION_POINT_MAX;
             OnAnyPointsChanged?.Invoke();
-            Debug.Log("Player Turn");
+            // Debug.Log("Player Turn");
         }
     }
     public bool IsEnemy()
@@ -113,5 +116,6 @@ public class Unit : MonoBehaviour
         GridManager.Instance.RemoveUnitAtGridPosition(gridPosition, this);
         // Debug.Log("a");
         Destroy(gameObject);
+        OnAnyUnitDead?.Invoke(this);
     }
 }
