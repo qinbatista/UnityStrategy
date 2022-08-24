@@ -112,7 +112,7 @@ public class ShootAction : BaseAction
     void Shoot()
     {
         OnStartShooting?.Invoke(new OnShootEventArgs { targetUnit = targetUnit, shootingUnit = unit });
-        targetUnit.Damage();
+        targetUnit.Damage(50);
     }
 
 }

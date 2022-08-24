@@ -32,4 +32,8 @@ public class SelectCircle : MonoBehaviour
             meshRenderer.enabled = false;
         }
     }
+    private void OnDestroy()
+    {
+        UnitActionSystem.Instance.OnSelectUnitEvent -= HandleSelectUnit;
+    }
 }
