@@ -7,7 +7,8 @@ public class MoveAction : BaseAction
 {
     // [SerializeField] Animator animator;
     int runningAnimationID;
-    Vector3 targetPosition;
+    List<Vector3> positionList;
+    int currentPositionIndex;
     float moveSpeed = 4f;
     float rotateSpeed = 10f;
     [SerializeField] int MaxMoveDistance = 4;
@@ -17,24 +18,33 @@ public class MoveAction : BaseAction
     {
         base.Awake();
         // runningAnimationID = Animator.StringToHash("running");
-        targetPosition = transform.position;
+        // targetPosition = transform.position;
     }
     // Update is called once per frame
     void Update()
     {
         if (!isActive) return;
-        if (transform.position != targetPosition)
+        Vector3 targetPosition = positionList[currentPositionIndex];
+        Vector3 moveDirection = (targetPosition - transform.position).normalized;
+        float rotateSpeed = 10f;
+        transform.forward = Vector3.Slerp(transform.forward, moveDirection, rotateSpeed * Time.deltaTime);
+        float stoppingDistance = 0.1f;
+        if (Vector3.Distance(transform.position, targetPosition) > stoppingDistance)
         {
-            Vector3 moveDirection = (targetPosition - transform.position).normalized;
             // animator.SetBool(runningAnimationID, true);
-            transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
-            transform.forward = Vector3.Lerp(transform.forward, moveDirection, rotateSpeed * Time.deltaTime);
+            // transform.position = Vector3.MoveTowards(transform.position, targetPosition, moveSpeed * Time.deltaTime);
+            // transform.forward = Vector3.Lerp(transform.forward, moveDirection, rotateSpeed * Time.deltaTime);
+            transform.position += moveDirection * moveSpeed * Time.deltaTime;
         }
         else
         {
-            OnStopMoving?.Invoke();
-            // animator.SetBool(runningAnimationID, false);
-            ActionComplete();
+            currentPositionIndex++;
+            if (currentPositionIndex >= positionList.Count)
+            {
+                OnStopMoving?.Invoke();
+                // animator.SetBool(runningAnimationID, false);
+                ActionComplete();
+            }
         }
     }
     // public void SetTarget(GridPosition targetPosition, Action onActionComplete)//Move in lecture
@@ -70,7 +80,14 @@ public class MoveAction : BaseAction
 
     public override void TakeAction(GridPosition gridPosition, Action onActionComplete)
     {
-        this.targetPosition = GridManager.Instance.GetWorldPosition(gridPosition);
+        List<GridPosition> pathGridPositionList = PathFinding.Instance.FindPath(unit.GetGridPosition(), gridPosition);
+        currentPositionIndex = 0;
+        positionList = new List<Vector3>();
+
+        foreach (GridPosition pathGridPosition in pathGridPositionList)
+        {
+            positionList.Add(GridManager.Instance.GetWorldPosition(pathGridPosition));
+        }
         OnStartMoving?.Invoke();
         ActionStart(onActionComplete);
     }
@@ -81,7 +98,7 @@ public class MoveAction : BaseAction
         return new EnemyAIAction
         {
             gridPosition = gridPosition,
-            actionValue = targetCountAtGidPosition*10,
+            actionValue = targetCountAtGidPosition * 10,
         };
     }
 }
