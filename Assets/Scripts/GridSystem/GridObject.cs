@@ -27,7 +27,7 @@ public class GridObject
         }
         Debug.Log("gridPosition="+gridPosition);
         Debug.Log("unitString="+unitString);
-        this.gridDebugObj.SetText(gridPosition.ToString() + "\n" + unitString);
+        // this.gridDebugObj.SetText(gridPosition.ToString() + "\n" + unitString);
     }
     public override string ToString()
     {

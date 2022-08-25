@@ -37,12 +37,17 @@
   </PropertyGroup>
   <ItemGroup>
      <Compile Include="Assets/Scripts/UI/UnitUI.cs" />
+     <Compile Include="Assets/Scripts/Controller/PathFinding.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridVisual.cs" />
      <Compile Include="Assets/Scripts/UI/UnityActionSystemUI.cs" />
      <Compile Include="Assets/Scripts/UI/UnitActionSystem.cs" />
+     <Compile Include="Assets/Scripts/Unit/EnemyAIAction.cs" />
      <Compile Include="Assets/Scripts/Unit/Unit.cs" />
+     <Compile Include="Assets/Scripts/Controller/CameraManager.cs" />
+     <Compile Include="Assets/Scripts/Controller/PathFindingDebugObject.cs" />
      <Compile Include="Assets/Scripts/Unit/UnitRagdollSpawner.cs" />
      <Compile Include="Assets/Scripts/Unit/BulletProjectile.cs" />
+     <Compile Include="Assets/Scripts/Controller/PathNode.cs" />
      <Compile Include="Assets/Scripts/Unit/UnitAnimator.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridPosition.cs" />
      <Compile Include="Assets/Scripts/Controller/CameraController.cs" />
@@ -65,14 +70,9 @@
      <Compile Include="Assets/Scripts/Unit/UnitRagdoll.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridSystem.cs" />
      <Compile Include="Assets/Scripts/Unit/SelectCircle.cs" />
+     <Compile Include="Assets/Scripts/Unit/UnitManger.cs" />
      <Compile Include="Assets/Scripts/Unit/ShootAction.cs" />
      <Compile Include="Assets/Scripts/GameManager.cs" />
-     <Compile Include="Assets/Scripts/Controller/CameraManager.cs" />
-     <Compile Include="Assets/Scripts/Unit/UnitManger.cs" />
-     <Compile Include="Assets/Scripts/Unit/EnemyAIAction.cs" />
-     <Compile Include="Assets/Scripts/Controller/PathFinding.cs" />
-     <Compile Include="Assets/Scripts/Controller/PathNode.cs" />
-     <Compile Include="Assets/Scripts/Controller/PathFindingDebugObject.cs" />
      <None Include="Assets/TextMesh Pro/Shaders/TMPro.cginc" />
      <None Include="Assets/PolygonPrototype/Shaders/Prototype_Glass_Global.shader" />
      <None Include="Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader" />

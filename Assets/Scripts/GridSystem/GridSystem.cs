@@ -57,6 +57,7 @@ public class GridSystem<TGridObject>
     }
     public TGridObject GetGridObject(GridPosition gridPosition)
     {
+        // Debug.Log("gridObjArray="+gridObjArray.Length);
         return gridObjArray[gridPosition.x, gridPosition.z];
     }
     public bool IsValidGridPosition(GridPosition gridPosition)

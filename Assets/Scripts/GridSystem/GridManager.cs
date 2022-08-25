@@ -19,7 +19,7 @@ public class GridManager : MonoBehaviour
     }
     void Start()
     {
-        // Debug.Log(new GridPosition(5, 5));
+        PathFinding.Instance.Setup((int)gridSize.x, (int)gridSize.y, (float)cellSize);
     }
 
     void Update()
