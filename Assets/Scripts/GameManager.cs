@@ -10,19 +10,53 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        List<int> aList = new List<int>();
-        aList.Add(1);
-        aList.Add(2);
-        aList.Add(3);
-        if(Input.GetKeyDown(KeyCode.G))
+
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            aList.Sort((int a, int b)=>b-a);
-            foreach (int item in aList)
+            MyMethodClass<BaseAction> myClassInt = new MyMethodClass<BaseAction>(null);
+            MyNormalClass<string> myClassString = new MyNormalClass<string>("string");
+            // GridPosition mouseGridPosition = GridManager.Instance.GetGridPosition(MouseController.Instance.GetWorldPosition());
+            // GridPosition startGridPosition = new GridPosition(0, 0);
+            // List<GridPosition> gridPositionsList = PathFinding.Instance.FindPath(startGridPosition, mouseGridPosition);
+            // for (int i = 0; i < gridPositionsList.Count - 1; i++)
+            // {
+            //     Debug.DrawLine(GridManager.Instance.GetWorldPosition(gridPositionsList[i]),
+            //     GridManager.Instance.GetWorldPosition(gridPositionsList[i + 1]), Color.white, 10f);
+            // }
+
+            GridPosition mouseGridPosition = GridManager.Instance.GetGridPosition(MouseController.Instance.GetWorldPosition());
+            GridPosition startGridPosition = new GridPosition(0, 0);
+
+            List<GridPosition> gridPositionList = PathFinding.Instance.FindPath(startGridPosition, mouseGridPosition);
+
+            for (int i = 0; i < gridPositionList.Count - 1; i++)
             {
-                Debug.Log(item);
+                Debug.DrawLine(
+                    GridManager.Instance.GetWorldPosition(gridPositionList[i]),
+                    GridManager.Instance.GetWorldPosition(gridPositionList[i + 1]),
+                    Color.white,
+                    10f
+                );
             }
-            GridVisual.Instance.HideAllGridPosition();
-            // GridVisual.Instance.ShowAllGridPosition(unit.GetMoveAction().GetValidActionGridPositionList());
+
+        }
+    }
+    class MyNormalClass<T>
+    {
+        T i;
+        public MyNormalClass(T i)
+        {
+            this.i = i;
+            Debug.Log(i);
+        }
+    }
+    class MyMethodClass<T> where T : BaseAction
+    {
+        T i;
+        public MyMethodClass(T i)
+        {
+            this.i = i;
+            Debug.Log(i);
         }
     }
 }

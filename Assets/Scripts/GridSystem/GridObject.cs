@@ -5,10 +5,10 @@ using UnityEngine;
 public class GridObject
 {
     GridPosition gridPosition;
-    GridSystem gridSystem;
+    GridSystem<GridObject> gridSystem;
     GridPositionText gridDebugObj;
     List<Unit> unitList;
-    public GridObject(GridSystem gridSystem, GridPosition gridPosition)
+    public GridObject(GridSystem<GridObject> gridSystem, GridPosition gridPosition)
     {
         this.gridSystem = gridSystem;
         this.gridPosition = gridPosition;
@@ -25,6 +25,8 @@ public class GridObject
         {
             unitString += unit.name + "\n";
         }
+        Debug.Log("gridPosition="+gridPosition);
+        Debug.Log("unitString="+unitString);
         this.gridDebugObj.SetText(gridPosition.ToString() + "\n" + unitString);
     }
     public override string ToString()

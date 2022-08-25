@@ -9,13 +9,13 @@ public class GridManager : MonoBehaviour
     [SerializeField] Vector2 gridSize;
     [SerializeField][Range(1, 10)] int cellSize;
     [SerializeField] Transform gridPrefab;
-    GridSystem gridSystem;
+    GridSystem<GridObject> gridSystem;
     void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        gridSystem = new GridSystem((int)gridSize.x, (int)gridSize.y, (float)cellSize);
-        gridSystem.CreateDebugObjects(gridPrefab);
+        gridSystem = new GridSystem<GridObject>((int)gridSize.x, (int)gridSize.y, (float)cellSize,(GridSystem<GridObject> g,GridPosition gridPosition)=>new GridObject(g,gridPosition));
+        // gridSystem.CreateDebugObjects(gridPrefab);
     }
     void Start()
     {

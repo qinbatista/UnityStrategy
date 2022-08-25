@@ -2,26 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
-
-public class GridSystem
+using System;
+public class GridSystem<TGridObject>
 {
     int width;
     int height;
     float cellSize;
-    GridObject[,] gridObjArray;
-
-    public GridSystem(int width, int height, float cellSize)
+    TGridObject[,] gridObjArray;
+    public GridSystem(int width, int height, float cellSize, Func<GridSystem<TGridObject>, GridPosition, TGridObject> createGridObject)
     {
         this.width = width;
         this.height = height;
         this.cellSize = cellSize;
-        gridObjArray = new GridObject[width, height];
+        gridObjArray = new TGridObject[width, height];
         for (int x = 0; x < width; x++)
         {
             for (int z = 0; z < height; z++)
             {
                 GridPosition gridPosition = new GridPosition(x, z);
-                gridObjArray[x, z] = new GridObject(this, gridPosition);
+                gridObjArray[x, z] = createGridObject(this, gridPosition);
                 Debug.DrawLine(GetWorldPosition(gridPosition), GetWorldPosition(gridPosition) + Vector3.up * 0.2f, Color.white, 100f);
             }
         }
@@ -42,15 +41,21 @@ public class GridSystem
         {
             for (int z = 0; z < height; z++)
             {
-                Transform positionTextTransform = GameObject.Instantiate(PositionTextPrefab, GetWorldPosition(new GridPosition(x,z)), Quaternion.identity);
-                GridPositionText gridDebugObj =  positionTextTransform.GetComponent<GridPositionText>();
-                gridDebugObj.SetGridObject(GetGridObject(new GridPosition(x, z)));
-                gridDebugObj.SetText("(" + x + "," + z + ")");
-                gridObjArray[x, z].SetGridPositionText(gridDebugObj);
+                GridPosition gridPosition = new GridPosition(x,z);
+                Transform debugTransform = GameObject.Instantiate(PositionTextPrefab, GetWorldPosition(new GridPosition(x,z)), Quaternion.identity);
+                GridPositionText gridDebugObj =  debugTransform.GetComponent<GridPositionText>();
+                gridDebugObj.SetGridObject(GetGridObject(gridPosition));
+
+
+                // Transform positionTextTransform = GameObject.Instantiate(PositionTextPrefab, GetWorldPosition(new GridPosition(x,z)), Quaternion.identity);
+
+                // gridDebugObj.SetGridObject(GetGridObject(new GridPosition(x, z)) as GridObject);
+                // gridDebugObj.SetText("(" + x + "," + z + ")");
+                // (gridObjArray[x, z] as GridObject).SetGridPositionText(gridDebugObj);
             }
         }
     }
-    public GridObject GetGridObject(GridPosition gridPosition)
+    public TGridObject GetGridObject(GridPosition gridPosition)
     {
         return gridObjArray[gridPosition.x, gridPosition.z];
     }
@@ -60,7 +65,7 @@ public class GridSystem
     }
     public void SetPositionText(GridPosition gridPosition)
     {
-        gridObjArray[gridPosition.x, gridPosition.z].SetText();
+        (gridObjArray[gridPosition.x, gridPosition.z] as GridObject).SetText();
     }
     public int GetWidth()
     {

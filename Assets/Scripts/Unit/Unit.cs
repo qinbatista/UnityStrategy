@@ -6,9 +6,7 @@ using UnityEngine;
 public class Unit : MonoBehaviour
 {
     GridPosition gridPosition;
-    MoveAction moveAction;
-    SpinAction spinAction;
-    ShootAction shootAction;
+
     BaseAction[] baseActionArray;
     int actionPoint = ACTION_POINT_MAX;
     const int ACTION_POINT_MAX = 3;
@@ -19,9 +17,6 @@ public class Unit : MonoBehaviour
     [SerializeField] public bool isEnemy = false;
     void Awake()
     {
-        moveAction = GetComponent<MoveAction>();
-        spinAction = GetComponent<SpinAction>();
-        shootAction = GetComponent<ShootAction>();
         baseActionArray = GetComponents<BaseAction>();
         healthSystem = GetComponent<HealthSystem>();
         // Debug.Log(this.name+" "+isEnemy);
@@ -30,7 +25,7 @@ public class Unit : MonoBehaviour
     {
         gridPosition = GridManager.Instance.GetGridPosition(transform.position);
         GridManager.Instance.AddUnitAtGridPosition(gridPosition, this);
-        GridManager.Instance.SetGridText(gridPosition);
+        // GridManager.Instance.SetGridText(gridPosition);
         TurnSystem.Instance.onTurnChanged += TurnSystem_OnTurnChanged;
         healthSystem.OnDie += HealthSystem_OnDie;
         OnAnyUnitSpawned?.Invoke(this);
@@ -46,17 +41,16 @@ public class Unit : MonoBehaviour
             GridManager.Instance.UnitMoveGridPosition(this, oldGridPosition, newGridPosition);
         }
     }
-    public MoveAction GetMoveAction()
+    public T GetAction<T>() where T : BaseAction
     {
-        return moveAction;
-    }
-    public ShootAction GetShootAction()
-    {
-        return shootAction;
-    }
-    public SpinAction GetSpinAction()
-    {
-        return spinAction;
+        foreach (BaseAction baseAction in baseActionArray)
+        {
+            if (baseAction is T)
+            {
+                return (T)baseAction;
+            }
+        }
+        return null;
     }
     public GridPosition GetGridPosition()
     {
