@@ -62,7 +62,7 @@
      <Compile Include="Assets/Scripts/GridSystem/GridManager.cs" />
      <Compile Include="Assets/Scripts/GridSystem/GridVisualSingle.cs" />
      <Compile Include="Assets/TutorialInfo/Scripts/Readme.cs" />
-     <Compile Include="Assets/Scripts/Unit/BaseAction.cs" />
+     <Compile Include="Assets/BaseAction.cs" />
      <Compile Include="Assets/Scripts/Unit/SpinAction.cs" />
      <Compile Include="Assets/Scripts/UI/TurnSystem.cs" />
      <Compile Include="Assets/Scripts/Controller/MouseController.cs" />
